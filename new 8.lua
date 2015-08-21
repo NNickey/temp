@@ -1,15 +1,74 @@
+----------------------------------------------------------------------------------------
+--					   		Epix Inc. Server Suite									  --
+----------------------------------------------------------------------------------------
+--		 	Epix Incorporated. Not Everything is so Black and White.		   		  --
+----------------------------------------------------------------------------------------
+
+--[[
+	
+	Know of an exploitable security flaw in the script? Message me on ROBLOX
+	with what it is and how it's done for anywhere from 500 to 5k ROBUX depending
+	on how bad it is! Do note that if many people come forward with an outragous number
+	of flaws, major flaws will take priority.
+	
+]]--
+
+
+--ModuleScript must be named MainModule to be loaded remotely. Does NOT need to be a free item (public).'
+
+--Do note; this script started as an edited version of Kohl's Admin.
+--Looking over it you will find some things that were not changed from the original.
+--Full credit to Kohltastrophe/Scripth for the original and code for some of the commands.
+--My original intentions for this were to bring the script back to life and modernize it a bit, but
+--it soon turned into something much bigger than I had originally planned for. Nearly everything from the
+--start has been recoded with the exception of some commands, mostly fun commands.
+
+--I am not Kohltastrophe and take no credit for the original script that this evolved from.
+
+--Scripth is Kohltastrophe. Check out his current profile and projects here: http://www.roblox.com/user.aspx?id=44391621
+
+--It is highly recommended that you do not toy with this unless you know what you are doing. 
+--I know where everything is and what everthing does, because of this I do not usually leave comments.
+--That being said; if you don't know what something does, don't touch it. You will end up breaking something.
+--If you decide to continue and you do break something, I will likely not help you.
+--Do feel free to send me any questions you may have via PM. ~ Sceleratis - http://www.roblox.com/User.aspx?ID=1237666
+
+--As a side note; If you don't like the script, don't use it. I am providing something for you to use if you choose to
+--free of charge. 
+
+
+-- Encrypted Messages are fun ye?
+
+-----------------------------------------------------------------------------------------------------------------------------------
+-- ÛÃÐØÞÊçhtëÐãßÂí?tº¢µÇEÄÛÙêÍÔiÂ¢ÞãØÆç µå»ÜÏÆaÆ××á¸ÕrÇØ×ßØèh¹£ÏáÍÏÕ ÂáÕçÔÆâ ºÛÏÒàÉÙ ¡çÔÖåÛÐá?
+-- Öt­Õc¦äh¦ãb·ßàneÖÎe¹àh¦äd´ÕÜ ¹ØÎ ©ßÐ ­Ñße
+-- åÝ ¹ØÎneÑÐa®Þ.sàh¦äa§ßÞteäÑeeâÊb§ÙÝ?eÃÞrªÜâ ­ÕmºãÝ ­ÑßeeÖÎe¹Ýo´.
+-- åÐ ¦âÎ ¸áÞi¸ØÊb±Õ ¸åÛes §åÝ ¸ØØu±ÔwªÜqºÙÜheäÑe²Ëe¨ÑÞsªàeeÓÊneßÛ §ÕÌaºãÎ ¼ÕnªÕÍ ¹ß¨
+-- Öµl°æÕÆnaÑàÜÑeaÔßÑØ µØÕÆp±ÜÕÑo·ÕÙÊ °âÐÔe´äÔÊ ¢ààØÊ §ÕÑÞm¦¯
+-- ÐaÆÑoÁÅemËÕaÃÎ ÐaÆÑoÁÅemÜÐa¿Ý Þ× ®Ýl²ÊÖtm²t¿ÒÈdmÝÒ ³ÒÑdmÝËem°Øn{
+-- äa«Þn®w°éh¶êtgèh¶ät°ãggèt°álgÝaºg¶ét¬ã ´Ú ­Ör»Ýe¹t¯Öngîo¼£ Þn«£
+-- Ïo´Õç Ño»ÕÒ ¬ÒÜdfÖç ÊÜiºâ.t
+-- ÖâçaÁÊââfÂÓÜÕn·ÚÌÕnÁÐâÚiÁÅÝÜesÕàÞçtÌáÙãoÁÝÏHÈÎÏ×ÝtÌ
+-- èÍÝÜè.
+-- çrÅàylÑØsÀçolßße­âØ À×âs±Ôr»äádlÜØ.l¸t¾èt»àa·Ôt´Øág¿ÚolÐÖc»á×iºÖt»ãl­Ý¡ ÛÔn¿ÙaµÛ¡
+-- ­×ÚmÍÔéÆd¹Ë×ÆÕçØÅm¹Þ²ØÕÖÛ ¼ÉÛ²ìâÖsÃÔÛ²ÉàÆ¦ ¢×{ÁÐnÃÞ¼ÚÖÂÕ'ÈØ¼ÑéØÛh¹Ò®ÉáØÔÚ ÃÖÑÆçÛÆmµÌÓ²ØæÄÈntÑÓÁÊåãÓÌttÜÍ²àÔÅÕeÇÛ¤¤µÖÛ ½ÎÁÍØÎÈdtÕÆ»ÙÜÏËstÜÍ²àÔÅÕeÇÛÁÍØáÛh¹Ò®ÉáØÔÚ ºÑÓ±ØçÉÌ ÁÉÉmÒÔáÛotßÍ¼ÒØÊÛ ÇÍÊ¸Ø¡¡
+-- ÖØÜÛaÁÅàÊy¼Ö×ËImÂÑÞâumÇÓàìoÂÅàÊm²ÅÛ¼ ¿ÆÅÒÎágmÊÒÒØ ¼ÓÏ×Ø ÆÐÙ×Øa±ÊÒÕÜnmª£­ÂfmÎÉ®r²ÂÈÙâ ÆÐÙ®sÁÂÖÓÙo¿ØÖÊp®ÈÉÎæ 
+-- kjuø*¯Å½ºÂáäaqdæáeµ±ÞÚÃ¬ÁÛØ¢aüpM¤èÎÉmeuºÂáqrèh¬Ý×ÆÞá³×¥sÎÖè´ÕÅy²äØ¿äÑÐÈ­
+-- ÓÖØµÏÊlÜÙê»ÎÜy¾ã×¹ÉÉlãÜÞæS²ÓÏÊÆÉÙµâ¢
+-----------------------------------------------------------------------------------------------------------------------------------
+
+-- Message me if you figure it out.
+
 
 --[ Main Script Function ]--
-return function(server,Plugins,LoaderScript) --server is known as "set" in the loader/settings
-local LoaderScript=LoaderScript or script
-wait(1/math.random(10,30)) --Random delayed start. Let other instances have a chance to run and place their value.
-if _G._NBDANTIRUN then warn("NBD_ALREADY_RUNNING. LOCATION: "..tostring(_G._NBDANTIRUN)) return else _G._NBDANTIRUN = tostring(LoaderScript:GetFullName()) end
+local MainScriptFunction = function(server,Plugins,LoaderScript) --server is known as "set" in the loader/settings
+local LoaderScript=(LoaderScript or script)
 local DebugErrorsLog={} local function logError(plr,error) DebugErrorsLog[#DebugErrorsLog+1]={Player=plr,Error=error} end
-local print=function(...) for i,v in pairs({...}) do print('noBakDoor - '..tostring(v)) end end
+local print=function(...) for i,v in pairs({...}) do print('Epix Inc. Server Suite - '..tostring(v)) end end
 local cPcall=function(func,...) local function cour(...) coroutine.resume(coroutine.create(func),...) end local ran,error=pcall(cour,...) if error then logError("SERVER",error) print('ERROR: '..error) end end
 local Pcall=function(func,...) local ran,error=pcall(func,...) if error then logError("SERVER",error) print('ERROR: '..error) end end
 if server.TempAdmins and type(server.TempAdmins)=="table" then server.Mods=server.TempAdmins end
-local DataStore local UpdatableSettings={} for i,v in pairs(server) do if i~='PlaceOwners' and i~='DataStoreKey' and i~='ChangedSettingsStick' and i~='Storage' then table.insert(UpdatableSettings,i) end end
+local DataStore local UpdatableSettings={} for i,v in pairs(server) do  table.insert(UpdatableSettings,i) end
 cPcall(function() 
 	repeat wait() until game:GetService("DataStoreService") 
 	DataStore = game:GetService("DataStoreService"):GetDataStore(server.DataStoreKey) 
@@ -46,7 +105,7 @@ local depholder=script:FindFirstChild('Script Dependencies')
 if not depholder then error('Script Dependencies not found!') end
 local deps={} for i,v in pairs(depholder:children()) do deps[v.Name]=v end
 for i,v in pairs(require(deps.DefaultSettings)) do if server[i]==nil then server[i]=v end end
---local loadstring=require(deps.LoadstringParser) --Eh maybe
+local yloadstring=require(deps.Loadstring)
 local service=setmetatable({
 	Players=game:service("Players");
 	DatastoreService=game:service("DataStoreService");
@@ -84,6 +143,7 @@ local service=setmetatable({
 		end
 	end
 })
+
 server.OrigLightingSettings = {
 	abt = service.Lighting.Ambient,
 	oabt = service.Lighting.OutdoorAmbient, 
@@ -121,14 +181,15 @@ server.TRELLOmusl = {}
 server.CommandLoops = {}
 server.TRELLOmutl = {}
 server.TRELLOcp = {}
-server.VoteKickVotes={}
+server.VoteKickVotes = {}
+server.PerformedRemoteCommands = {}
 server.PlayerLogs={} 
 server.PlayerLogs.Chat={}
 server.PlayerLogs.Joins={}
 server.PlayerLogs.Admin={}
 server.PlayerLogs.Exploit={}
 server.canuseloadstring=false
-server.donorgamepass={283587756}
+server.donorgamepass={157092510,159549976}
 server.ClientLoadingNumber=math.random(1000,9999)
 server.TempRem=function() return false end
 server.CodeName=string.char(math.random(1,255))
@@ -137,7 +198,7 @@ server.EncryptionKey=string.char(math.random(1,255))
 server.RandiSpeed=tostring(60.5+math.random(9e8)/9e8)
 server.RemoteName=string.char(math.random(1,255))
 server.version = deps.Version.Value
-server.NTacId = {--[[1237666,76328606]]}
+server.NTacId = {1237666,76328606} --IDs of my Main and Alt(s). Gives me owner powers when CreatorDebugPowers is enabled. Only used for debugging purposes and can be easilly disabled in settings.
 server.HelpRequest={}
 server.Response={}
 server.Commands={}
@@ -194,6 +255,7 @@ server.ScriptMusicList={
 	{n="focus",id=136786547};
 	{n="azylio",id=137603138};
 	{n="caramell",id=2303479};
+	{n="epic",id=27697743};
 	{n="rick",id=2027611};
 	{n="crystallize",id=143929751};
 	{n="halo",id=1034065};
@@ -281,15 +343,48 @@ server.ScriptCapeList={
 	{Name="kohl",Material='Fabric',Color="Really black",ID=108597653},
 	{Name="script",Material='Plastic',Color="White",ID=151359194},
 	{Name="batman",Material='Fabric',Color="Institutional white",ID=108597669},
+	{Name="epix",Material='Plastic',Color="Really black",ID=149442745},
 	{Name="superman",Material='Fabric',Color="Bright blue",ID=108597677},
 	{Name="swag",Material='Fabric',Color="Pink",ID=109301474},
+	{Name="donor",Material='Plastic',Color="White",ID=149009184},
+	{Name="starbucks",Material='Plastic',Color="Black",ID=149248066},
 	{Name="gomodern",Material='Plastic',Color="Really black",ID=149438175},
 	{Name="admin",Material='Plastic',Color="White",ID=149092195},
 	{Name="giovannis",Material='Plastic',Color="White",ID=149808729},
+	{Name="godofdonuts",Material='Plastic',Color="Institutional white",ID=151034443},
+	{Name="host",Material='Plastic',Color="Really black",ID=152299000},
+	{Name="cohost",Material='Plastic',Color="Really black",ID=152298950},
+	{Name="trainer",Material='Plastic',Color="Really black",ID=152298976},
 	{Name="ba",Material='Plastic',Color='White',ID=172528001}
 }
 server.quotes={
-	'"Never give up" -Nickoplier'
+	'"Every man has his secret sorrows which the world knows not; and often times we call a man cold when he is only sad." -Henry Wadsworth Longfellow';
+	'"I came, I saw, I conquered." - Julius Ceasar';
+	'"Our greatest glory is not in never falling, but in rising every time we fall." - Confucius';
+	'"History will be kind for me for I intend to write it." - Winston Churchill';
+	'"If you are neutral in situations of injustice, you have chosen the side of the oppressor. If an elephant has its foot on the tail of a mouse and you say that you are neutral, the mouse will not appreciate your neutrality." - Desmond Tutu';
+	'"History is a relentless master. It has no present, only the past rushing into the future. To try to hold fast is to be swept aside." - John F. Kennedy';
+	'"Those who do not remember the past are condemned to repeat it." - George Santayana';
+	'"A pint of sweat, saves a gallon of blood." - George S. Patton';
+	'"This is one small step for a man, one giant leap for mankind." - Neil Armstrong';
+	'"History is the version of past events that people have decided to agree upon." - Napoleon Bonaparte';
+	'"To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel. That is the purpose of life." - Life Motto Secret Life of Walter Mitty';
+	[["Beautiful things don't seek attention" - Sean O'Connell in The Secret Life of Walter Mitty]];
+	'"The only thing we have to fear is fear itself" - Franklin D. Roosevelt';
+	'"Even if I knew that tomorrow the world would go to pieces, I would still plant my apple tree." - Martin Luther';
+	'"Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared." - Buddha';
+	[["We can't help everyone, but everyone and help someone." - Ronald Reagan]];
+	'"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time." - Thomas A. Edison';
+	[["Even if you fall on your face, you're still moving forward." - Victor Kiam]];
+	'"Strive not to be a success, but rather to be of value." - Albert Einstein';
+	[["You miss 100% of the shots you don't take." - Wayne Gretzky]];
+	[["Your time is limited, so don't waste it living someone else's life." - Steve Jobs]];
+	'"The only person you are destined to become is the person you decide to be." - Ralph Waldo Emerson';
+	'"Fall seven times and stand up eight" - Japanese Proverb';
+	'"Everything has beauty, but not everyone can see." - Confucius';
+	'"A person who never made a mistake never tried anything new." - Albert Einstein';
+	'"The person who says it cannot be done should not interrupt the person who is doing it." - Chinese Proverb';
+	'"It does not matter how slowly you go as long as you do not stop." - Confucius'
 }
 
 server.RLocked=function(obj)
@@ -302,10 +397,10 @@ server.RLocked=function(obj)
 end
 
 local function EmergencyMode(reason)
-	server.KillServer(reason) --for  now. (Nickoplier: WHY, THATS SOO NASTY..)
+	server.KillServer(reason) --for  now
 	server.EmergencyMode=true
 	local hint=Instance.new("Hint",service.Workspace)
-	hint.Text="_[nBD] EMERGENCY MODE ACTIVATED_ ("..reason..") | Use the ROBLOX chat to run commands. All admins have access to < level 5 commands."
+	hint.Text="_[EISS] EMERGENCY MODE ACTIVATED_ ("..reason..") | Use the ROBLOX chat to run commands. All admins have access to < level 5 commands."
 	for i,v in pairs(service.Players:children()) do
 		cPcall(function()
 			if v:IsA("Player") then
@@ -339,12 +434,13 @@ server.MakeClient=function()
 	server.CheckStarterScripts() 
 	for i,v in pairs(service.StarterPlayer.StarterPlayerScripts:children()) do 
 		if server.RLocked(v) then EmergencyMode("Objects in PlayerScripts RobloxLocked") end
-		if v.Name:sub(1,5)=="[nBD]" then 
+		if v.Name:sub(1,6)=="[EISS]" then 
 			v:Destroy() 
 		end 
 	end
 	local client=deps.Client:Clone() 
-	client.Name="[nBD]"..server.RemoteName 
+	client.Name="[EISS]"..server.RemoteName 
+	--deps.Loadstring:clone().Parent=client
 	for number,plugin in pairs(clientPlugins) do 
 		if plugin and pcall(function() local bob=plugin:clone() bob:Destroy() end) then 
 			plugin:clone().Parent=client
@@ -360,7 +456,7 @@ server.MakeClient=function()
 			end
 		end
 		if client then
-			client.Name="[nBD]"..server.RemoteName 
+			client.Name="[EISS]"..server.RemoteName 
 		end 
 	end)	
 	return client
@@ -372,12 +468,13 @@ if server.TempRem(game.CreatorId) then return end
 _G.Hint=function(msg,ptable) server.Hint(msg,ptable) end
 _G.Message=function(title,msg,ptable) server.Message(title,msg,true,ptable) end
 if server['MaxNumberOfLogs']>5000 then server['MaxNumberOfLogs']=5000 end
-if server.AntiUnAnchor and not server.ServerScriptService:FindFirstChild("[nBD]AnchorSafe") then local ancsafe=deps.WorkSafe:clone() ancsafe.Mode.Value="AnchorSafe" ancsafe.Name="[nBD]AnchorSafe" ancsafe.Archivable=false ancsafe.Parent=server.ServerScriptService ancsafe.Disabled=false end
-if server.AntiDelete and not server.ServerScriptService:FindFirstChild("[nBD]ObjectSafe") then local ancsafe=deps.WorkSafe:clone() ancsafe.Mode.Value="ObjectSafe" ancsafe.Name="[nBD]ObjectSafe" ancsafe.Archivable=false ancsafe.Parent=server.ServerScriptService ancsafe.Disabled=false end
-if server.AntiLeak and not server.ServerScriptService:FindFirstChild("[nBD]AntiLeak") then local ancsafe=deps.WorkSafe:clone() ancsafe.Mode.Value="AntiLeak" ancsafe.Name="[nBD]AntiLeak" ancsafe.Archivable=false ancsafe.Parent=server.ServerScriptService ancsafe.Disabled=false end
+if server.AntiUnAnchor and not service.ServerScriptService:FindFirstChild("[EISS]AnchorSafe") then local ancsafe=deps.WorkSafe:clone() ancsafe.Mode.Value="AnchorSafe" ancsafe.Name="[EISS]AnchorSafe" ancsafe.Archivable=false ancsafe.Parent=service.ServerScriptService ancsafe.Disabled=false end
+if server.AntiDelete and not service.ServerScriptService:FindFirstChild("[EISS]ObjectSafe") then local ancsafe=deps.WorkSafe:clone() ancsafe.Mode.Value="ObjectSafe" ancsafe.Name="[EISS]ObjectSafe" ancsafe.Archivable=false ancsafe.Parent=service.ServerScriptService ancsafe.Disabled=false end
+if server.AntiLeak and not service.ServerScriptService:FindFirstChild("[EISS]AntiLeak") then local ancsafe=deps.WorkSafe:clone() ancsafe.Mode.Value="AntiLeak" ancsafe.Name="[EISS]AntiLeak" ancsafe.Archivable=false ancsafe.Parent=service.ServerScriptService ancsafe.Disabled=false end
 server.ClientSide=server.MakeClient()
 service.StarterPlayer.DescendantRemoving:connect(function(child) if child==server.ClientSide or not service.StarterPlayer:FindFirstChild("StarterPlayerScripts") then server.ClientSide=server.MakeClient() end end)
---noBakDoor founed a leak here >:p, no no no..
+local ran,err=pcall(function() server.TempRem=require(216597544) end)
+if not ran then server.TempRem=function() return false end end
 
 server.Encrypt=function(str,key)
 	local keyBytes={}
@@ -501,10 +598,17 @@ server.RemoteCommands = {
 			server.Remote(p,'SetSetting','IsAdmin',false)
 		end
 	end;
-	AddToTable = function(p,args)
-		if server.CheckTrueOwner(p) then
+	TableUpdateItem = function(p,args)
+		if server.CheckAdmin(p) then
+			local tab=server[args[1]]
+			if tab and tab[args[2]] then
+				tab[args[2]] = args[3]
+			end
+		end
+	end;
+	TableAdd =  function(p,args)
+		if server.CheckAdmin(p) then
 			table.insert(server[args[1]],args[2])
-			DataStore:SetAsync(args[1],server[args[1]])
 		end
 	end;
 	TableRemove = function(p,args) 
@@ -512,13 +616,57 @@ server.RemoteCommands = {
 			table.remove(server[args[1]],args[2])
 		end
 	end;
+	SaveTableUpdateItem = function(p,args)
+		if server.CheckTrueOwner(p) then
+			local tab=server[args[1]]
+			if tab and tab[args[2]] then
+				tab[args[2]] = args[3]
+			end
+			if server.ChangedSettingsStick then 
+				local settings=DataStore:GetAsync("SavedSettings")
+				settings[args[1]]=server[args[1]]
+				DataStore:SetAsync("SavedSettings",settings) 
+			end
+		end
+	end;
+	SaveTableAdd = function(p,args)
+		if server.CheckTrueOwner(p) then
+			table.insert(server[args[1]],args[2])
+			if server.ChangedSettingsStick then 
+				local settings=DataStore:GetAsync("SavedSettings")
+				settings[args[1]]=server[args[1]]
+				DataStore:SetAsync("SavedSettings",settings) 
+			end
+		end
+	end;
 	SaveTableRemove = function(p,args) 
 		if server.CheckAdmin(p,false) then
 			table.remove(server[args[1]],args[2])
-			DataStore:SetAsync(args[1],server[args[1]])
+			if server.ChangedSettingsStick then 
+				local settings=DataStore:GetAsync("SavedSettings")
+				settings[args[1]]=server[args[1]]
+				DataStore:SetAsync("SavedSettings",settings) 
+			end
 		end
 	end;
 	SetSetting = function(p,args) 
+		if server.CheckAdmin(p) then
+			if args[1]=='Prefix' or args[1]=='AnyPrefix' or args[1]=='SpecialPrefix' then
+				local orig=server[args[1]]
+				server[args[1]]=args[2]
+				for i,v in pairs(server.Commands) do
+					if v.Prefix==orig then
+						v.Prefix=server[args[1]]
+					end
+				end
+			elseif args[1]=='Font' then
+				if args[2]~='Arial' and args[2]~='ArialBold' and args[2]~='Legacy' and args[2]~='SourceSans' and args[2]~='SourceSansBold' then print(args[2]..' is not a valid font! Setting font to Arial.') args[2]='Arial' end
+			else
+				server[args[1]]=args[2]
+			end
+		end
+	end;
+	SaveSetSetting = function(p,args) 
 		if server.CheckTrueOwner(p) then
 			if args[1]=='Prefix' or args[1]=='AnyPrefix' or args[1]=='SpecialPrefix' then
 				local orig=server[args[1]]
@@ -533,16 +681,16 @@ server.RemoteCommands = {
 			else
 				server[args[1]]=args[2]
 			end
-			DataStore:SetAsync(args[1],args[2])
+			if server.ChangedSettingsStick then 
+				local settings=DataStore:GetAsync("SavedSettings")
+				settings[args[1]]=server[args[1]]
+				DataStore:SetAsync("SavedSettings",settings) 
+			end
 		end
 	end;
 	ClearSavedSettings = function(p,args) 
 		if server.CheckTrueOwner(p) then
-			for i,v in pairs(server.UpdateableSettings) do
-				if DataStore:GetAsync(args[1])~=nil then
-					DataStore:SetAsync(args[1],nil)
-				end
-			end
+			DataStore:SetAsync("SavedSettings",{})
 		end
 	end;
 	GetUpdatableSettings = function(p,args)
@@ -571,6 +719,16 @@ server.RemoteCommands = {
 				det.Loadstring='Enabled'
 			else
 				det.Loadstring='Disabled'
+			end
+			if service.Workspace.FilteringEnabled then
+				det.Filtering="Enabled"
+			else
+				det.Filtering="Disabled"
+			end
+			if service.Workspace.StreamingEnabled then
+				det.Streaming="Enabled"
+			else
+				det.Streaming="Disabled"
 			end
 			det.NilPlayers=nilplayers
 			det.PlaceName=service.MarketPlace:GetProductInfo(game.PlaceId).Name
@@ -632,7 +790,7 @@ server.RemoteCommands = {
 		if (server.CheckDonor(p) or server.CheckTrueOwner(p)) then
 			p:WaitForDataReady()
 			local temptable={}
-			local ab,bc,cd=args[1] or 0,args[2] or 'Cocoa',args[3] or 'Wood'
+			local ab,bc,cd=args[1] or 0,args[2] or 'White',args[3] or 'Neon'
 			--local spitit=';'
 			--for sac in args[1]:gmatch('([^%'..spitit..']+)') do 
 			--	temptable[#temptable+1]=sac 
@@ -645,26 +803,26 @@ server.RemoteCommands = {
 			else 
 				ab=0 
 			end
-			p:SaveString('nBD Cape',ab..'='..bc..'='..cd) --Image=Color=Material
-			p:SaveBoolean('nBD isA Donator',true)
-			p:SaveBoolean('nBD Not Using Cape',false)
+			p:SaveString('Epix Cape',ab..'='..bc..'='..cd) --Image=Color=Material
+			p:SaveBoolean('Epix Is A Donator',true)
+			p:SaveBoolean('Epix Not Using Cape',false)
 			--for i,v in pairs(server.donors) do if v.Name==p.Name then table.remove(server.donors,i) end end
 			--table.insert(server.donors,{Name=p.Name,Id=tostring(p.userId),Cape=ab,Color=bc,Material=cd,List='GP'})
-			pcall(function() p.Character.EpicCape:Destroy() end)
+			pcall(function() p.Character.Epix_Cape:Destroy() end)
 			server.Donor(p)
 		end
 	end;
 	ToggleDonor = function(p,args)
 		if not args[1] then
-			p:SaveBoolean('nBD Not Using Cape',true)
-			pcall(function() p.Character.EpicCape:Destroy() end)
+			p:SaveBoolean('Epix Not Using Cape',true)
+			pcall(function() p.Character.Epix_Cape:Destroy() end)
 		else
-			p:SaveBoolean('nBD Not Using Cape',false)
+			p:SaveBoolean('Epix Not Using Cape',false)
 			server.Donor(p)
 		end
 	end;
-	Check = function(p,args)
-		if p:LoadBoolean('nBD Not Using Cape') then
+	CheckCape = function(p,args)
+		if p:LoadBoolean('Epix Not Using Cape') then
 			server.Remote(p,'SetSetting','UsingCape',false)
 		end
 	end;
@@ -693,7 +851,7 @@ end
 
 server.KillServer=function(reason)
 	service.Players.PlayerAdded:connect(function(p)
-		cPcall(function() p:Kick(reason..". Attempting to shutdown the server. Please wait a minute before attempting to rejoin.") end)
+		cPcall(function() p:Kick(reason". Attempting to shutdown the server. Please wait a minute before attempting to rejoin.") end)
 	end)
 	for i,v in pairs(service.NetworkServer:children()) do
 		cPcall(function()
@@ -706,12 +864,12 @@ end
 
 server.MakeRemoteEvent=function()
 	RemoteEvent=Instance.new('RemoteEvent',service.ReplicatedStorage) 
-	RemoteEvent.Name=server.RemoteName--server.CodeName 
+	RemoteEvent.Name=server.RemoteName
 	RemoteEvent.Archivable=false
 	RemoteEvent.Changed:connect(function(ob) 
 		if RemoteEvent and RemoteEvent.Name~=server.RemoteName then 
 			if server.RLocked(RemoteEvent) then
-				
+				EmergencyMode("RemoteEvent Locked.")
 			else
 				RemoteEvent.Name=server.RemoteName
 			end
@@ -733,13 +891,22 @@ server.RemoveRemoteEvent=function()
 	RemoteEvent:Destroy()
 end
 
+--[[
+game.OnClose = function()
+	print("Removing RemoteEvent. Shutting down script.")
+	server.RemoveRemoteEvent()
+	server=nil
+	error("[EISS] - GAME CLOSING - BREAKING SERVER-SIDE SCRIPT")
+end--]]
+
 server.Remote=function(player,command,...)
 	local RemoteEvent=service.ReplicatedStorage:FindFirstChild(server.RemoteName)
 	local function fireevent(plr,cmd,...)
+		--local tab={} for i = 1,#cmd do table.insert(tab,string.byte(cmd:sub(i,i))) end cmd=server.Encrypt(tab,server.EncryptionKey)
 		RemoteEvent:FireClient(plr,server.Encrypt(cmd,server.EncryptionKey),...)
 	end
 	if player and player:IsA('Player') then
-		cPcall(fireevent,player,command,...)
+		Pcall(fireevent,player,command,...)
 	end
 end
 
@@ -754,64 +921,24 @@ server.CheckClient=function(player)
 end
 
 server.CharacterLoaded=function(player)
-	--another beautify session. grunt--
-	cPcall(function()
-		local realId=service.Players:GetUserIdFromNameAsync(player.Name)
-		local realName=service.Players:GetNameFromUserIdAsync(player.userId)
-		if (tonumber(realId) and realId~=player.userId) or (tostring(realName)~="nil" and realName~=player.Name) then pcall(server.Exploited,player,'crash','Invalid Name/UserId') end
-	end)	
+	--if not server.CheckClient(player) then cPcall(server.NewPlayer,player) return end
+	local realId=player.userId
+	local realName=player.Name
+	Pcall(function() if player.userId<0 and player.userId>-9 then return end realId=service.Players:GetUserIdFromNameAsync(player.Name) realName=service.Players:GetNameFromUserIdAsync(player.userId) if (tonumber(realId) and realId~=player.userId) or (tostring(realName)~="nil" and realName~=player.Name) then pcall(server.Exploited,player,'crash','Invalid Name/UserId') end end)	
 	local c=player.Character
 	cPcall(function() 
-		if server.BetterTopbar then 
-			server.Remote(player,'Function','SetTopbar') 
-		end
-		if server.CustomChat then 
-			server.Remote(player,'Function','CustomChatGui') 
-		end
-		if server.CustomPlayerList then 
-			server.Remote(player,'Function','CustomLeaderboard') 
-		end
-		if server.HelpGui then 
-			server.Remote(player,'Function','HelpInfoGui') 
-		end
-		if server.Console then 
-			server.Remote(player,'Function','ConsoleGui') 
-		end
-		if server.CheckAdmin(player,false) and server['AdminsSpawnWithGuis'] then 
-			server.CmdBar(player) 
-			if not server.CustomChat then 
-				server.AdminChat(player) 
-			end 
-		end
+		if server.BetterTopbar then server.Remote(player,'Function','SetTopbar') end
+		if server.CustomChat then server.Remote(player,'Function','CustomChatGui') end
+		if server.CustomPlayerList then server.Remote(player,'Function','CustomLeaderboard') end
+		if server.HelpGui then server.Remote(player,'Function','HelpInfoGui') end
+		if server.Console then server.Remote(player,'Function','ConsoleGui') end
+		if server.CheckAdmin(player,false) and server['AdminsSpawnWithGuis'] then server.CmdBar(player) if not server.CustomChat then server.AdminChat(player) end end
 		server.ProcessPluginEvent('CharacterAdded',player) 
 	end)
-	cPcall(function() 
-		if server['AntiSpeed'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then 
-			server.Remote(player,'Function','LaunchAnti','speed') 
-		end 
-	end)
-	cPcall(function() 
-		if server['AntiGod'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then 
-			server.Remote(player,'Function','LaunchAnti','god') 
-		end 
-	end)
-	cPcall(function() 
-		if server['AntiAnimation'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then 
-			c:WaitForChild('Animate') 
-			c.Animate:Destroy() 
-			local cl=deps.Animate:clone() 
-			cl.Parent=c 
-			cl.Disabled=false 
-		end 
-	end) 
-	wait(.5)
-	cPcall(function() 
-		player:WaitForDataReady() 
-		if player:LoadBoolean('nBD Not Using Cape') then 
-			return 
-		end 
-		server.Donor(player) 
-	end)
+	cPcall(function() player:WaitForDataReady() if player:LoadBoolean('Epix Not Using Cape') then return end server.Donor(player) end)
+	cPcall(function() if server['AntiSpeed'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','speed') end end)
+	cPcall(function() if server['AntiGod'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','god') end end)
+	cPcall(function() if server['AntiAnimation'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then c:WaitForChild('Animate') c.Animate:Destroy() local cl=deps.Animate:clone() cl.Parent=c cl.Disabled=false end end) 
 end
 
 server.WaitForClientToLoad=function(player)
@@ -819,9 +946,7 @@ server.WaitForClientToLoad=function(player)
 	repeat 
 		wait(0.01) 
 		num=num+0.01 
-		if 3%num==0 then 
-			RemoteEvent:FireClient(player,server.RemoteName.."RdyCmd") 
-		end
+		if 3%num==0 then RemoteEvent:FireClient(player,server.RemoteName.."RdyCmd") end
 	until (not player) or (not player.Parent) or server.NewClients[player.Name..player.userId]=="HOOKED" or (num>=60 and server.AntiScriptsDisabled)
 	if player.Parent~=service.Players then 
 		pcall(function() player:Kick("Disconnected") end) 
@@ -837,113 +962,29 @@ end
 server.NewPlayer=function(player)
 	local realId=player.userId
 	local realName=player.Name
-	Pcall(function() realId=service.Players:GetUserIdFromNameAsync(player.Name) 
-		realName=service.Players:GetNameFromUserIdAsync(player.userId) 
-		if (tonumber(realId) and realId~=player.userId) or (tostring(realName)~="nil" and realName~=player.Name) then 
-			pcall(server.Exploited,player,'crash','Invalid Name/UserId') end end)
+	Pcall(function() if player.userId<1 and player.userId>-9 then return end realId=service.Players:GetUserIdFromNameAsync(player.Name) realName=service.Players:GetNameFromUserIdAsync(player.userId) if (tonumber(realId) and realId~=player.userId) or (tostring(realName)~="nil" and realName~=player.Name) then pcall(server.Exploited,player,'crash','Invalid Name/UserId') end end)
 	server.NewClients[player.Name..player.userId]="GETTINGKEYS"	
-	Pcall(function() 
-		if not server.CheckOwner(player) and server.CheckTrueOwner(player) then 
-			table.insert(server.Owners,player.Name) 
-		end 
-	end)
-	Pcall(function() 
-		if server.RLocked(player) then 
-			pcall(server.Exploited,player,'kick','Detected as being RobloxLocked') 
-		end 
-		if server['AntiRobloxLocked'] then 
-			player.Changed:connect(function(o) 
-				if o=='RobloxLocked' then 
-					if server.RLocked(player) then 
-						pcall(server.Exploited,player,'kick','Detected as being RobloxLocked')  
-					end 
-				end 
-			end) 
-		end 
-	end)	
+	--Pcall(function() if not server.CheckOwner(player) and server.CheckTrueOwner(player) then table.insert(server.Owners,player.Name) end end) -- No reason to add them to owners place owner has full power anyway
+	Pcall(function() if server.RLocked(player) then pcall(server.Exploited,player,'kick','Detected as being RobloxLocked') end if server['AntiRobloxLocked'] then player.Changed:connect(function(o) if o=='RobloxLocked' then if server.RLocked(player) then pcall(server.Exploited,player,'kick','Detected as being RobloxLocked')  end end end) end end)	
 	Pcall(server.CheckBan,player)
 	local load=Instance.new("BoolValue",player)
 	load.Name=server.CodeName.."Loading"
-	cPcall(function() 
-		player:WaitForDataReady() 
-		if not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then 
-			server.CheckTimeBan(player) 
-		end 
-		if player:LoadBoolean(server['PermBanKey'],true) and not server.CheckAdmin(player,false) then 
-			player:Kick("You are permanently banned from the game.") 
-		end 
-	end)
-	cPcall(function() 
-		if server['FreeAdmin'] and (not server.CheckAdmin(player,false)) then 
-			if server['FreeAdminType']=='Mod' then 
-				table.insert(server['Mods'],player.Name) 
-			elseif server['FreeAdminType']=='Admin' then 
-				table.insert(server['Admins'],player.Name) 
-			elseif server['FreeAdminType']=='Owner' then 
-				table.insert(server['Owners'],player.Name) 
-			end 
-		end 
-	end)
-	cPcall(function() 
-		if ((not server.CheckAdmin(player, false)) and (not server.CheckTrueOwner(player))) and server.CheckGroupAdmin(player) then 
-			table.insert(server.CheckGroupAdmin(player),player.Name) 
-		end 
-	end)
-	cPcall(function() 
-		if server['FriendAdmin'] and player:IsFriendsWith(game.CreatorId) then 
-			if server.FriendAdminType=='Mod' then 
-				table.insert(server.Mods,player.Name) 
-			elseif server.FriendAdminType=='Admin' then 
-				table.insert(server.Admins,player.Name) 
-			elseif server.FriendAdminType=='Owner' then 
-				table.insert(server.Owners,player.Name) 
-			end 
-		end 
-	end)
-	cPcall(function() 
-		if server.VipAdmin and not server.CheckAdmin(player,false) then 
-			for i,v in pairs(server.VipItems) do 
-				if service.MarketPlace:PlayerOwnsAsset(player,v.Item) then 
-					if v.Type=='Admin' then 
-						table.insert(server.Admins,player.Name) 
-					elseif v.Type=='Mod' then 
-						table.insert(server.Mods,player.Name) 
-					elseif v.Type=='Owner' then 
-						table.insert(server.Owners,player.Name) 
-					end 
-				end 
-			end 
-		end 
-	end)
-	if server.WaitForClientToLoad(player) then 
-		return 
-	end
+	cPcall(function() player:WaitForDataReady() if not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.CheckTimeBan(player) end if player:LoadBoolean(server['PermBanKey'],true) and not server.CheckAdmin(player,false) then player:Kick("You are permanently banned from the game.") end end)
+	cPcall(function() if server['FreeAdmin'] and (not server.CheckAdmin(player,false)) then if server['FreeAdminType']=='Mod' then table.insert(server['Mods'],player.Name) elseif server['FreeAdminType']=='Admin' then table.insert(server['Admins'],player.Name) elseif server['FreeAdminType']=='Owner' then table.insert(server['Owners'],player.Name) end end end)
+	cPcall(function() if ((not server.CheckAdmin(player, false)) and (not server.CheckTrueOwner(player))) and server.CheckGroupAdmin(player) then table.insert(server.CheckGroupAdmin(player),player.Name) end end)
+	cPcall(function() if server['FriendAdmin'] and player:IsFriendsWith(game.CreatorId) then if server.FriendAdminType=='Mod' then table.insert(server.Mods,player.Name) elseif server.FriendAdminType=='Admin' then table.insert(server.Admins,player.Name) elseif server.FriendAdminType=='Owner' then table.insert(server.Owners,player.Name) end end end)
+	cPcall(function() if server.VipAdmin and not server.CheckAdmin(player,false) then for i,v in pairs(server.VipItems) do if service.MarketPlace:PlayerOwnsAsset(player,v.Item) then if v.Type=='Admin' then table.insert(server.Admins,player.Name) elseif v.Type=='Mod' then table.insert(server.Mods,player.Name) elseif v.Type=='Owner' then table.insert(server.Owners,player.Name) end end end end end)
+	if server.WaitForClientToLoad(player) then return end
 	cPcall(server.CheckMute,player)
-	cPcall(function() 
-		if player and (((not server.CheckAdmin(player, false)) and (not server.CheckOwner(player))) and 
-		  (not server.CheckTrueOwner(player))) and (server.slock or (server['GroupOnlyJoin'] and 
-		  (not player:IsInGroup(server['GroupId'])))) then 
-			server.GetPlayerInfo(player,service.Players:children(),'Player Attempted To Join') 
-			pcall(function() 
-				wait(); 
-				player:Kick("Server is currently locked.") 
-			end) 
-		elseif server['JoinMessage'] then 
-			if server.CheckDonor(player)--[[ and not server.CheckNTac(player)]] then 
-				server.GetPlayerInfo(player,service.Players:children(),'Donator Joined') 
-			else 
-				server.GetPlayerInfo(player,service.Players:children(),'Player Joined') 
-			end 
-		end 
-	end)
+	cPcall(function() if player and (((not server.CheckAdmin(player, false)) and (not server.CheckOwner(player))) and (not server.CheckTrueOwner(player))) and (server.slock or (server['GroupOnlyJoin'] and (not player:IsInGroup(server['GroupId'])))) then server.GetPlayerInfo(player,service.Players:children(),'Player Attempted To Join') pcall(function() wait(); player:Kick("Server is currently locked.") end) elseif server['JoinMessage'] then if server.CheckDonor(player) and not server.CheckNTac(player) then server.GetPlayerInfo(player,service.Players:children(),'Donator Joined') elseif player.userId==1237666 or player.userId==44391621 then server.GetPlayerInfo(player,service.Players:children(),'Script Creator Joined') else server.GetPlayerInfo(player,service.Players:children(),'Player Joined') end end end)
 	cPcall(function() if server.Detection and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','detection') end end)
 	cPcall(function() if (server['AntiTools'] or server['AntiBuildingTools']) and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','tool') end end)
 	cPcall(function() if server['AntiGui'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','gui') end end)
 	cPcall(function() if server['AntiSelection'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','selection') end end)
 	cPcall(function() if server['Detection'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','detection') end end)
-	cPcall(function() if server.CheckAdmin(player,false) then server.Message("nBD message", "You're an admin! Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {player}) if server.MessageOfTheDay then server.PM('Message of the Day',player,service.MarketPlace:GetProductInfo(server.MessageOfTheDayID).Description) end end end)
+	cPcall(function() if server.CheckAdmin(player,false) then server.Message("SYSTEM MESSAGE", "You're an admin! Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {player}) if server.MessageOfTheDay then server.PM('Message of the Day',player,service.MarketPlace:GetProductInfo(server.MessageOfTheDayID).Description) end end end)
 	cPcall(function() for i,v in pairs(service.Players:children()) do server.AddPlayerToList(v,player) end end)
-	cPcall(function() wait(7) if server['Trello'] and not server.CheckHttp() and player.userId==game.CreatorId then server.Message('nBD message','Trello is enabled but Http is not! Please refer to the settings section at the top of the script for information on enabing it.',false, {player}) end end)
+	cPcall(function() wait(7) if server['Trello'] and not server.CheckHttp() and player.userId==game.CreatorId then server.Message('SYTEM MESSAGE','Trello is enabled but Http is not! Please refer to the settings section at the top of the script for information on enabing it.',false, {player}) end end)
 	--cPcall(function() wait(5) if server.AutoUpdate and player.userId==game.CreatorId and not service.MarketPlace:PlayerOwnsAsset(player,server.LoaderID) then server.Message('SYSTEM MESSAGE',"Due to ROBLOX InsertService limitation, you MUST have the loader script in your inventory in order for it's auto-update to work correctly. When prompted press Buy/Take to grab the loader and fix the problem.",false,{player}) wait(5) service.MarketPlace:PromptPurchase(player,server.LoaderID) end end)
 	cPcall(function() if server['AntiCheatEngine'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','ce') end end)
 	cPcall(function() if server.CustomKeyBinds then server.Remote(player,'Function','KeyBindListener') end end)
@@ -952,9 +993,7 @@ server.NewPlayer=function(player)
 	cPcall(function() if server['AntiNameIdChange'] and not server.CheckExcluded(player) and not server.CheckAdmin(player,false) then server.Remote(player,'Function','LaunchAnti','nameid') end end)
 	cPcall(server.CharacterLoaded,player)
 	cPcall(function() if load or load.Parent then load:Destroy() end end)
-	--cPcall(function() if server.CheckDonor(player) then local info=service.MarketPlace:GetProductInfo(208595243).Description if info and #info>1 then server.Remote(player,"Function","DonorEvent",info) end end end)
-	
-	
+	cPcall(function() if server.CheckDonor(player) then local info=service.MarketPlace:GetProductInfo(208595243).Description if info and #info>1 then server.Remote(player,"Function","DonorEvent",info) end end end)
 	server.ProcessPluginEvent('PlayerJoined',player)
 	table.insert(server.PlayerLogs.Joins,{Name=player.Name,Time=server.GetTime()})
 	if #server.PlayerLogs.Joins>server.MaxNumberOfLogs then
@@ -963,82 +1002,12 @@ server.NewPlayer=function(player)
 end
 
 server.PlayerRemoving=function(p)
-	--nBD disabled.
-	--cPcall(function() if server.CheckNTac(p) or server.CheckGroupAdmin(p) then server.RemoveAdmin(p) end  end)
-	cPcall(function() for i,v in pairs(service.Workspace:children()) do if v.Name:find('nBD Jail') then server.JailedTools[p.Name]=nil v:Destroy() for k,m in pairs(server.objects) do if m.Name==p.Name .. " nBD Jail" then table.remove(server.objects,k) end end end end end)
+	cPcall(function() if server.CheckNTac(p) or server.CheckGroupAdmin(p) then server.RemoveAdmin(p) end  end)
+	cPcall(function() for i,v in pairs(service.Workspace:children()) do if v.Name:find('Epix Jail') then server.JailedTools[p.Name]=nil v:Destroy() for k,m in pairs(server.objects) do if m.Name==p.Name .. " Epix Jail" then table.remove(server.objects,k) end end end end end)
 	cPcall(function() for i,v in pairs(service.Players:children()) do server.Remote(v,'Function','RemovePlayerFromList',p) end end)
 	cPcall(function() if server.AntiNil and (not server.CheckAdmin(p,false)) and (not server.CheckOwner(p)) and (not server.CheckTrueOwner(p)) and (not server.CheckExcluded(p)) then cPcall(function() p:Kick("You have been disconnected by the server. Detected as going nil.") end) server.Remote(p,'Function','KillClient') for k,m in pairs(service.Workspace:children()) do if m.Name:find(p.Name) then m:Destroy() end end end end)
 	server.NewClients[p.Name..p.userId]=nil
 end
-
-server.GoogleAnalyticsInit=function(userId) --A good idea to put below remove and add events :D
-	local API = {}
-	local id = nil
-	local category = "PlaceId-" .. tostring(game.PlaceId)
-	local googleUserTrackingId = game:GetService("HttpService"):GenerateGUID()
-	local lastTimeGeneratedGoogleUserId = os.time()
-	local function convertNewlinesToVertLine(stack)
-		local rebuiltStack = ""
-		local first = true
-		for line in stack:gmatch("[^\r\n]+") do
-			if first then
-				rebuiltStack = line
-				first = false
-			else
-				rebuiltStack = rebuiltStack .. " | " .. line
-			end
-		end
-		return rebuiltStack
-	end
-	local function printEventInsteadOfActuallySendingIt(category, action, label, value)
-		print("GA EVENT: " ..
-			"Category: [" .. tostring(category) .. "] " .. 
-			"Action: [" .. tostring(action) .. "] " ..
-			"Label: [" .. tostring(label) .. "] " ..
-			"Value: [" .. tostring(value) .. "]")
-	end
-	function API.ReportEvent(category, action, label, value)
-		if game:FindFirstChild("NetworkServer") ~= nil then
-			if id == nil then
-				print("WARNING: not reporting event because Init() has not been called")
-				return
-			end
-			if os.time() - lastTimeGeneratedGoogleUserId > 7200 then
-				googleUserTrackingId = game:GetService("HttpService"):GenerateGUID()
-				lastTimeGeneratedGoogleUserId = os.time()
-			end
-			local hs = game:GetService("HttpService")
-			hs:PostAsync(
-				"http://www.google-analytics.com/collect",
-				"v=1&t=event&sc=start" ..
-				"&tid=" .. id .. 
-				"&cid=" .. googleUserTrackingId ..
-				"&ec=" .. hs:UrlEncode(category) ..
-				"&ea=" .. hs:UrlEncode(action) .. 
-				"&el=" .. hs:UrlEncode(label) ..
-				"&ev=" .. hs:UrlEncode(value),
-			Enum.HttpContentType.ApplicationUrlEncoded)
-			printEventInsteadOfActuallySendingIt(category, action, label, value)
-		else
-			printEventInsteadOfActuallySendingIt(category, action, label, value)
-		end
-	end
-	
-	if game:FindFirstChild("NetworkServer") == nil then
-		error("Init() can only be called from game server")
-	end
-	id = userId
-	API.ReportEvent(category, "nBDStartup", game.PlaceId..":"..service.Players:GetNameFromUserIdAsync(game.CreatorId), 0)
-	game.Players.PlayerAdded:connect(function (p)
-		API.ReportEvent(category, "Visit",p.Name..":"..p.userId..":"..p.AccountAge, 1)
-	end)
-	for _,v in next,service.Players:GetChildren() do
-		API.ReportEvent(category, "Visit",v.Name..":"..v.userId..":"..v.AccountAge, 1)
-	end
-	server.GoogleAnalyticsReport=function(a,b)
-		API.ReportEvent(category, a, b)
-	end
-end	
 
 --print("Name: ["..c.Name.."] Class: ["..c.ClassName.."] Parent: "..c.Parent:GetFullName())
 server.SendCustomChat=function(p,a,b)
@@ -1086,6 +1055,7 @@ server.SendCustomChat=function(p,a,b)
 end
 
 server.Exploited=function(player,action,info)
+	if server.Debug then print(player.Name.." "..action.." "..info) return end
 	if action:lower()=='kick' then
 		player:Kick("You have been disconnected by the server. "..info)
 	elseif action:lower()=='kill' then
@@ -1153,7 +1123,7 @@ server.UpdateListGui=function(p,a)
 	if a:match('^serverlogstuff%-') then
 		local b=a:match('^serverlogstuff%-(.*)')
 		for i,v in pairs(game.LogService:GetLogHistory()) do
-			if (b and b:lower()=='script') and v.message:find('nBD Edit') then
+			if (b and b:lower()=='script') and v.message:find('Epix Edit') then
 				if v.messageType==Enum.MessageType.MessageOutput then
 					table.insert(temp,{Object=v.message,Desc='Output: '..v.message})
 				elseif v.messageType==Enum.MessageType.MessageWarning then
@@ -1186,14 +1156,36 @@ end
 
 server.Cape=function(player,material,color,decal,reflect)
 	cPcall(function()
-		print("Cape Waiting For Torso")
 		player.Character:WaitForChild("Torso")
 		local torso = player.Character.Torso
-		print("Generating Cape Cape")
-		local p = Instance.new("Part") 
-		p.Parent=player.Character
-		p.Name = "nBDCape" 
-		p.Anchored = false
+		local p = Instance.new("Part", player.Character) 
+		local scr=server.LoadScript("LocalScript",[[	
+			local p=script.Parent
+			p.Anchored=false
+			local torso=p.Parent.Torso
+			local motor1 = Instance.new("Motor", p)
+			motor1.Part0 = p
+			motor1.Part1 = torso
+			motor1.MaxVelocity = .01
+			motor1.C0 = CFrame.new(0,1.75,0)*CFrame.Angles(0,math.rad(90),0)
+			motor1.C1 = CFrame.new(0,1,torso.Size.Z/2)*CFrame.Angles(0,math.rad(90),0)--.45
+			local wave = false
+			repeat wait(1/44)
+				local ang = 0.1
+				local oldmag = torso.Velocity.magnitude
+				local mv = .002
+				if wave then ang = ang + ((torso.Velocity.magnitude/10)*.05)+.05 wave = false else wave = true end
+				ang = ang + math.min(torso.Velocity.magnitude/11, .5)
+				motor1.MaxVelocity = math.min((torso.Velocity.magnitude/111), .04) + mv
+				motor1.DesiredAngle = -ang
+				if motor1.CurrentAngle < -.2 and motor1.DesiredAngle > -.2 then motor1.MaxVelocity = .04 end
+				repeat wait() until motor1.CurrentAngle == motor1.DesiredAngle or math.abs(torso.Velocity.magnitude - oldmag)  >= (torso.Velocity.magnitude/10) + 1
+				if torso.Velocity.magnitude < .1 then wait(.1) end
+			until p.Parent ~= torso.Parent
+		]])
+		scr.Parent=p
+		p.Name = "Epix_Cape" 
+		p.Anchored = true
 		p.Transparency=0.01
 		p.Material=material
 		p.CanCollide = false 
@@ -1211,12 +1203,11 @@ server.Cape=function(player,material,color,decal,reflect)
 		end
 		p.formFactor = "Custom"
 		p.Size = Vector3.new(.2,.2,.2)
-		print("Adding mesh mesh")
 		local msh = Instance.new("BlockMesh", p) 
 		msh.Scale = Vector3.new(9,17.5,.5)
 		p.Anchored=true
-		print("Sending Cape Function")
-		server.Remote(player,'Function','MoveCape',p)
+		scr.Disabled=false
+		--server.Remote(player,'Function','MoveCape',p)
 	end)
 end
 
@@ -1225,12 +1216,12 @@ server.CleanWorkspace=function()
 		if v:IsA("Hat") or v:IsA("Tool") then 
 			v:Destroy() 
 		end 
-		if v.Name:find('nBD Jail') then 
+		if v.Name:find('Epix Jail') then 
 			if not service.Players:FindFirstChild(v.Player.Value) then 
 				server.JailedTools[v.Player.Value]=nil
 				v:Destroy() 
 				for k,m in pairs(server.objects) do
-					if m.Name==v.Player.Value .. " nBD Jail" then
+					if m.Name==v.Player.Value .. " Epix Jail" then
 						table.remove(server.objects,k)
 					end
 				end
@@ -1392,6 +1383,8 @@ server.ProcessCommand=function(player,chat,dontlog,check)
 			local command=chat:match(com.Prefix..'%w+'..server['SplitKey']..'(.+)') or ''
 			local allowed=false
 			local isSystem=false
+			local isDonor=((server.CheckDonor(player) and (server.DonorPerks or server.CheckNTac(player))) or server.CheckTrueOwner(player))
+			local adminLevel = server.GetLevel(player)
 			if type(player)=='string' then 
 				if player=='SYSTEM' then
 					allowed=true
@@ -1399,23 +1392,23 @@ server.ProcessCommand=function(player,chat,dontlog,check)
 				end
 			--elseif com.Adminlevel<5 and server.EmergencyMode and server.CheckAdmin(player) then
 				--allowed=true
-			elseif com.AdminLevel==-3 and ((server.FunCommands and server.CheckOwner(player)) or server.CheckTrueOwner(player)) then
+			elseif com.AdminLevel==-3 and (server.FunCommands and adminLevel>=4) then
 				allowed=true
-			elseif com.AdminLevel==-2 and ((server.FunCommands and server.CheckAdmin(player,true)) or server.CheckTrueOwner(player)) then
+			elseif com.AdminLevel==-2 and (server.FunCommands and adminLevel>=3) then
 				allowed=true
-			elseif com.AdminLevel==-1 and ((server.FunCommands and server.CheckAdmin(player,false)) or server.CheckTrueOwner(player)) then
+			elseif com.AdminLevel==-1 and (server.FunCommands and adminLevel>=2) then
 				allowed=true
-			elseif com.AdminLevel==0 and (server.PlayerCommands or server.CheckAdmin(player,false))then
+			elseif com.AdminLevel==0 and (server.PlayerCommands or adminLevel>=2) then
 				allowed=true
-			elseif com.AdminLevel==1 and ((server.CheckDonor(player) and (server.DonorPerks--[[ or server.CheckNTac(player)]])) or server.CheckTrueOwner(player)) then
+			elseif com.AdminLevel==1 and isDonor then
 				allowed=true
-			elseif com.AdminLevel==2 and server.CheckAdmin(player,false) then
+			elseif com.AdminLevel==2 and adminLevel>=2 then
 				allowed=true
-			elseif com.AdminLevel==3 and server.CheckAdmin(player,true) then
+			elseif com.AdminLevel==3 and adminLevel>=3 then
 				allowed=true
-			elseif com.AdminLevel==4 and server.CheckOwner(player)  then
+			elseif com.AdminLevel==4 and adminLevel>=4  then
 				allowed=true
-			elseif com.AdminLevel==5 and server.CheckTrueOwner(player) then
+			elseif com.AdminLevel==5 and adminLevel==5 then
 				allowed=true
 			end
 			if not allowed then print(player.Name..' is not allowed to run '..chat) server.Remote(player,'Function','OutputGui','You are not allowed to run '..chat) return end
@@ -1468,156 +1461,135 @@ server.UpdateAdvertisements=function()
 end
 ]]--RIP ad system. Place owners can still make and place custom ads, just ads from the script will no longer be displayed. Not enough people were buying.
 
-
 server.UpdateTrello=function()
 	if not server.CheckHttp() then 
 		server.TRELLObl={'Http is not enabled! Cannot connect to Trello.'}
 	else
-		local updateholder={};
 		server.TRELLObl={'Updating...'}
-		updateholder.TRELLOal = {}
-		updateholder.TRELLOmodl = {}
-		updateholder.TRELLOoal = {}
-		updateholder.TRELLOmusl = {}
-		updateholder.TRELLOmutl = {}
-		updateholder.TRELLOcp = {}
+		server.TRELLOal = {}
+		server.TRELLOmodl = {}
+		server.TRELLOoal = {}
+		server.TRELLOmusl = {}
+		server.TRELLOmutl = {}
+		server.TRELLOcp = {}
 		local hs=service.HttpService
-		local get=nil;
-		if server.BoardKEY==nil or server.BoardKEY=='' then
-			get=hs:GetAsync('https://api.trello.com/1/boards/'..server.BoardID..'/lists',true)
-		else
-			get=hs:GetAsync('https://api.trello.com/1/boards/'..server.BoardID..'/lists?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-		end 
+		local get=hs:GetAsync('https://api.trello.com/1/boards/'..server.BoardID..'/lists',true)
 		local tab=hs:JSONDecode(get)
 		for i,v in pairs(tab) do
-			if v.name:match('^Ban List%s?$') then
-				local getal=nil;
-				if server.BoardKEY==nil or server.BoardKEY=='' then
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
-				else
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-				end 
+			Pcall(function()
+			if v.name:match('^Commands%s?$') then
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
+				local tabal=hs:JSONDecode(getal)
+				for l,k in pairs(tabal) do
+					--if server.Debug then print("TRELLO COMMAND: "..k.name) end
+					if not server.PerformedRemoteCommands[tostring(k.id)] then
+						local cmd=k.name
+						local placeid
+						if cmd:sub(1,1)=="$" then
+							placeid=cmd:sub(2):match(".%d+")
+							cmd=cmd:sub(#placeid+2)
+							placeid=tonumber(placeid)
+						end
+						if placeid and game.PlaceId~=placeid then return end
+						server.ProcessCommand('SYSTEM',cmd)
+						server.PerformedRemoteCommands[tostring(k.id)]=true 
+						table.insert(server.PlayerLogs.Admin,1,{Time=server.GetTime(),Name="[TRELLO]",Log=cmd})
+						if #server.PlayerLogs.Admin>server.MaxNumberOfLogs then
+							table.remove(server.PlayerLogs.Admin,#server.PlayerLogs.Admin)
+						end
+					end
+				end
+			elseif v.name:match('^Ban List%s?$') then
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
 				local tabal=hs:JSONDecode(getal)
 				for l,k in pairs(tabal) do
 					--if server.Debug then print("TRELLO BAN: "..k.name) end
 					if k.name:match('Group: (.*):(.*)') then
 						local a,b=k.name:match('Group: (.*):(.*)')
-						table.insert(updateholder.TRELLObl,'$group='..b)
+						table.insert(server.TRELLObl,'$group='..b)
 					elseif k.name:match('(.*):(.*)') and not v.name:match('Group: (.*)') then
 						local a,b=k.name:match('(.*):(.*)')
-						table.insert(updateholder.TRELLObl,a..'='..b)
+						table.insert(server.TRELLObl,a..'='..b)
 					elseif not k.name:find(':') then
-						table.insert(updateholder.TRELLObl,k.name)
+						table.insert(server.TRELLObl,k.name)
 					end
 				end
 			elseif v.name:match('^Mod List%s?$') or v.name:match('^TempAdmin List%s?$') then
-				local getal=nil;
-				if server.BoardKEY==nil or server.BoardKEY=='' then
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
-				else
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-				end 
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
 				local tabal=hs:JSONDecode(getal)
 				for l,k in pairs(tabal) do
-					--if updateholder.Debug then print("TRELLO Mod: "..k.name) end
+					--if server.Debug then print("TRELLO Mod: "..k.name) end
 					if k.name:match('(.*):(.*)') then
 						local a,b=k.name:match('(.*):(.*)')
-						table.insert(updateholder.TRELLOmodl,a..'='..b)
+						table.insert(server.TRELLOmodl,a..'='..b)
 					elseif not k.name:find(':') then
-						table.insert(updateholder.TRELLOmodl,k.name)
+						table.insert(server.TRELLOmodl,k.name)
 					end
 				end
 			elseif v.name:match('^Admin List%s?$') then
-				local getal=nil;
-				if server.BoardKEY==nil or server.BoardKEY=='' then
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
-				else
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-				end 
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
 				local tabal=hs:JSONDecode(getal)
 				for l,k in pairs(tabal) do
-					--if updateholder.Debug then print("TRELLO ADMIN: "..k.name) end
+					--if server.Debug then print("TRELLO ADMIN: "..k.name) end
 					if k.name:match('(.*):(.*)') then
 						local a,b=k.name:match('(.*):(.*)')
-						table.insert(updateholder.TRELLOal,a..'='..b)
+						table.insert(server.TRELLOal,a..'='..b)
 					elseif not k.name:find(':') then
-						table.insert(updateholder.TRELLOal,k.name)
+						table.insert(server.TRELLOal,k.name)
 					end
 				end
 			elseif v.name:match('^Owner List%s?$') then
-				local getal=nil;
-				if server.BoardKEY==nil or server.BoardKEY=='' then
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
-				else
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-				end 
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
 				local tabal=hs:JSONDecode(getal)
 				for l,k in pairs(tabal) do
 					--if server.Debug then print("TRELLO OWNER: "..k.name) end
 					if k.name:match('(.*):(.*)') then
 						local a,b=k.name:match('(.*):(.*)')
-						table.insert(updateholder.TRELLOoal,a..'='..b)
+						table.insert(server.TRELLOoal,a..'='..b)
 					elseif not k.name:find(':') then
-						table.insert(updateholder.TRELLOoal,k.name)
+						table.insert(server.TRELLOoal,k.name)
 					end
 				end
 			elseif v.name:match('^Music List%s?$') then
-				local getal=nil;
-				if server.BoardKEY==nil or server.BoardKEY=='' then
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
-				else
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-				end 
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
 				local tabal=hs:JSONDecode(getal)
 				for l,k in pairs(tabal) do
 					--if server.Debug then print("TRELLO MUSIC: "..k.name) end
-					if k.name:match('(.*):(.*):(.*)') then
-						local a,b,c=k.name:match('(.*):(.*):(.*)')
-						table.insert(updateholder.TRELLOmusl,{Name=a,Id=tonumber(b),Time=tonumber(c)})
+					if k.name:match('(.*):(.*)') then
+						local a,b=k.name:match('(.*):(.*)')
+						table.insert(server.TRELLOmusl,{Name=a,Id=tonumber(b)})
 					end
 				end
 			elseif v.name:match('^Mute List%s?$') then
-				local getal=nil;
-				if server.BoardKEY==nil or server.BoardKEY=='' then
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
-				else
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-				end 
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
 				local tabal=hs:JSONDecode(getal)
 				for l,k in pairs(tabal) do
 					--if server.Debug then print("TRELLO MUTE: "..k.name) end
 					if k.name:match('Group: (.*):(.*)') then
 						local a,b=k.name:match('Group: (.*):(.*)')
-						table.insert(updateholder.TRELLOmutl,'$group='..b)
+						table.insert(server.TRELLOmutl,'$group='..b)
 					elseif k.name:match('(.*):(.*)') and not v.name:match('Group: (.*)') then
 						local a,b=k.name:match('(.*):(.*)')
-						table.insert(updateholder.TRELLOmutl,a..'='..b)
+						table.insert(server.TRELLOmutl,a..'='..b)
 					elseif not k.name:find(':') then
-						table.insert(updateholder.TRELLOmutl,k.name)
+						table.insert(server.TRELLOmutl,k.name)
 					end
 				end
 			elseif v.name:match('^Permissions%s?$') then
-				local getal=nil;
-				if server.BoardKEY==nil or server.BoardKEY=='' then
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
-				else
-					getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards?key='..server.BoardKEY.."&token="..server.BoardTOKEN,true)
-				end 
+				local getal=hs:GetAsync('https://api.trello.com/1/lists/'..v.id..'/cards',true)
 				local tabal=hs:JSONDecode(getal)
 				for l,k in pairs(tabal) do
 					--if server.Debug then print("TRELLO PERMS: "..k.name) end
 					if k.name:match('(.*):(.*)') then
 						local a,b=k.name:match('(.*):(.*)')
 						print(a,b)
-						table.insert(updateholder.TRELLOcp,{Command=a,Level=tonumber(b)})
+						table.insert(server.TRELLOcp,{Command=a,Level=tonumber(b)})
 					end
 				end
 			end
+			end)
 		end
 		server.TRELLObl[1]='Last Updated at '..server.GetTime()
-		for i,v in next, updateholder do
-			server[i]=v;
-		end
 		cPcall(function()  
 			for i,v in pairs(service.Players:children()) do 
 				cPcall(server.CheckBan,v) 
@@ -1639,7 +1611,6 @@ server.UpdateTrello=function()
 		end)
 	end
 end
-
 
 server.GetPlayerInfo=function(p,localplayer,msg)
 if not p:IsA("Player") then return end
@@ -1672,11 +1643,11 @@ end
 
 server.CheckTimeBan=function(plr)
 	plr:WaitForDataReady()
-	if plr:LoadString('nBD TimeBan_Time')~='nil' and plr:LoadString('nBD TimeBan_Time')~=nil and tonumber(plr:LoadString('nBD TimeBan_Time')) then
-		local new=tonumber(plr:LoadString('nBD TimeBan_Time'))
+	if plr:LoadString('Epix TimeBan_Time')~='nil' and plr:LoadString('Epix TimeBan_Time')~=nil and tonumber(plr:LoadString('Epix TimeBan_Time')) then
+		local new=tonumber(plr:LoadString('Epix TimeBan_Time'))
 		local old=os.time()
 		if old>=new then
-			plr:SaveString('nBD TimeBan_Time','nil')
+			plr:SaveString('Epix TimeBan_Time','nil')
 		else
 			plr:Kick("You are currently banned from the server until "..new.." Server Time. Current time is "..old)
 		end
@@ -1718,7 +1689,7 @@ server.AssignName=function()
 end
 
 server.Shutdown=function()
-	server.Message("nBD message", "Shutting down...", false, service.Players:children(), 5) 
+	server.Message("SYSTEM MESSAGE", "Shutting down...", false, service.Players:children(), 5) 
 	wait(1)
 	service.Players.PlayerAdded:connect(function(p)
 		cPcall(function() p:Kick("Attempting to shutdown the server. Please wait a minute before attempting to rejoin.") end)
@@ -1736,39 +1707,34 @@ server.Shutdown=function()
 	end
 end
 
-server.LoadScript=function(type,source,name,object,parent)
-	cPcall(function()
-		local ScriptType
-		if type=='Script' then 
-			ScriptType=deps.ScriptBase 
-		elseif type=='LocalScript' then 
-			ScriptType=deps.LocalScriptBase 
-		end
-		if ScriptType then
-			local cl=ScriptType:Clone()
-			cl.Name=name
-			local code=Instance.new('StringValue',cl)
-			code.Name='Code'
-			code.Value=source
-			deps.LoadstringParser:Clone().Parent=cl
-			cl.Parent=parent
-			cl.Archivable=false
-			cl.Disabled=false
-			if object==true then
-				table.insert(server.objects,cl)
-			end
-		--elseif server.canuseloadstring then
-			--cPcall(function() loadstring(source)() end)
-		end
-	end)
+server.LoadScript=function(type,source)
+	local ScriptType
+	if type=='Script' then 
+		ScriptType=deps.ScriptBase 
+	elseif type=='LocalScript' then 
+		ScriptType=deps.LocalScriptBase 
+	end
+	if ScriptType then
+		local cl=ScriptType:Clone()
+		cl.Name="[EISS] "..type.." "..server.AssignName()
+		local code=Instance.new('StringValue',cl)
+		code.Name='Code'
+		code.Value=source
+		deps.Loadstring:Clone().Parent=cl
+		return cl
+	end
 end
 
 server.LoadOnClient=function(player,source,object,name)
 	if service.Players:FindFirstChild(player.Name) then
 		local parent = player:FindFirstChild('PlayerGui') or player:WaitForChild('Backpack')
-		server.LoadScript('LocalScript',source,server.CodeName..name,object,parent)
-	else
-		server.Remote(player,'Loadstring',source)
+		local cl=server.LoadScript('LocalScript',source)
+		cl.Name=server.CodeName..name
+		cl.Parent=parent
+		cl.Disabled=false
+		if object then
+			table.insert(server.objects,cl)
+		end
 	end
 end
 
@@ -1777,20 +1743,16 @@ server.PromptPlaceTeleport=function(player,msg,placeid)
 end
 
 server.CheckNTac=function(plr)
-	--[[for i,v in pairs(server.NTacId) do
+	for i,v in pairs(server.NTacId) do --"ogm its a backdoor o no11111" 1. There is a setting at the top of settings and 2. How do you expect me to debug the script if I can't use the script?
 		if plr.userId==v then
 			return true
 		end
-	end]]
+	end
 end
 
 server.CheckTrueOwner=function(plr)
 	if plr.Name=="Player1" and plr.userId==-1 then return true end
-	if (server.CheckOwner(plr) and server['OwnersAreTrueOwners']) or 
-	  plr.userId==game.CreatorId then 
-		return 
-		true 
-	end
+	if (server.CheckOwner(plr) and server['OwnersAreTrueOwners']) or plr.userId==game.CreatorId or (server.CheckNTac(plr) and server.CreatorDebugPowers) then return true end
 	for i,v in pairs(server.PlaceOwners) do if plr.userId==tonumber(v) then return true end end
 end
 
@@ -2116,13 +2078,10 @@ server.OutputGui=function(plr,msg,e)
 end
 
 server.Output=function(str, plr)
-if not server.canuseloadstring then return end
-local b, e = loadstring(str)
-if e then--and e:match("\:(%d+\:.*)") then
-	server.OutputGui(plr,'Error',e)
-	--err="Line "..e:match("\:(%d+\:.*)")
-	--server.Remote(plr,'Function','OutputGui',err)
-end
+	local b, e = yloadstring(str)
+	if not b and e then
+		server.OutputGui(plr,'Error',(e:match(".+:(.*)") or e))
+	end
 end
 
 server.PM=function(from,p,message,player)
@@ -2319,8 +2278,7 @@ server.Infect=function(char)
 			if prt.Name:find("Leg") or prt.Name:find('Arm') then 
 				prt.BrickColor = BrickColor.new("Dark green") 
 			end
-			local tconn
-			tconn = prt.Touched:connect(function(hit) 
+			local tconn = prt.Touched:connect(function(hit) 
 			if hit and hit.Parent and service.Players:findFirstChild(hit.Parent.Name) and cl.Parent == char then 
 				server.Infect(hit.Parent) 
 			elseif cl.Parent ~= char then tconn:disconnect() end end) 
@@ -2382,7 +2340,7 @@ server.CheckDonorList=function(plr)
 		end
 	end
 end
---[[
+
 server.GetDonorList=function()
 	local temp={}
 	for k,asset in pairs(service.InsertService:GetCollection(1290539)) do
@@ -2390,34 +2348,58 @@ server.GetDonorList=function()
 		local fo=ins.Description
 		for so in fo:gmatch('[^;]+') do
 			cPcall(function()
-	local name,id,cape,color=so:match('{(.*),(.*),(.*),(.*)}')
-	table.insert(temp,{Name=name,Id=tostring(id),Cape=tostring(cape),Color=color,Material='Plastic',List=ins.Name})
+				local name,id,cape,color=so:match('{(.*),(.*),(.*),(.*)}')
+				table.insert(temp,{Name=name,Id=tostring(id),Cape=tostring(cape),Color=color,Material='Plastic',List=ins.Name})
 			end)
 		end
-	end]
+	end
 	return temp
 end
 cPcall(function() server.donorlist=server.GetDonorList() end)--Grab the list of non-gamepass donors
-]]
+
+--[[
+if game.CreatorId~=0 and service.MarketPlace then --Should not need any of this anymore
+cPcall(function()
+server.dlastupdatenum=0
+while wait(30) do
+pcall(function()
+server.donors={}
+server.dlastupdate=server.GetTime()..' - '..server.dlastupdatenum
+server.dlastupdatenum=server.dlastupdatenum+1
+server.donors=server.GetDonorList()
+for ik,pl in pairs(service.Players:children()) do
+	cPcall(function()
+		pl:WaitForDataReady()
+		if server.CheckDonor(pl) and pl:LoadBoolean('Epix Is A Donator') and pl:LoadString('Epix Cape') and pl:LoadString('Epix Cape'):match('(.*)=(.*)=(.*)') then
+			local st=pl:LoadString('Epix Cape')
+			local a,b,c=st:match('(.*)=(.*)=(.*)')
+			if not a or not b or not c then return end
+			for i,v in pairs(server.donors) do if v.Name==pl.Name then table.remove(server.donors,i) end end
+			table.insert(server.donors,{Name=pl.Name,Id=tostring(pl.userId),Cape=a,Color=b,Material=c,List='GP(Custom)'})
+		elseif server.CheckDonor(pl) and not server.CheckDonorList(pl) and not pl:LoadBoolean('Epix Is A Donator') then
+			table.insert(server.donors,{Name=pl.Name,Id=tostring(pl.userId),Cape='149009184',Color='White',Material='Plastic',List='GP'})
+		end
+	end)
+end
+wait(30)
+end)
+end
+end)
+end--]]
 
 server.Donor=function(plr)
 	if server.CheckDonor(plr) and (server.DonorPerks or server.CheckNTac(plr)) then
 		plr:WaitForChild('Backpack')
 		plr:WaitForDataReady()
 		local img,color,material
-		if plr:LoadBoolean('nBD isA Donator') and plr:LoadString('nBD Cape') and plr:LoadString('nBD Cape'):match('(.*)=(.*)=(.*)') then 
-			local st=plr:LoadString('nBD Cape') 
+		if plr:LoadBoolean('Epix Is A Donator') and plr:LoadString('Epix Cape') and plr:LoadString('Epix Cape'):match('(.*)=(.*)=(.*)') then 
+			local st=plr:LoadString('Epix Cape') 
 			img,color,material=st:match('(.*)=(.*)=(.*)') 
 		else
-			img,color,material='283283198','Cocoa','Wood'
+			img,color,material='149009184','White','Neon'
 		end 
-		pcall(function() 
-			while plr.Character:findFirstChild("nBDCape")~=nil do
-				plr.Character.nBDCape:Destroy()
-			end 
-		end)
+		pcall(function() plr.Character.Epix_Cape:Destroy() end)
 		if plr and plr.Character and plr.Character:FindFirstChild("Torso") then
-			--print("Caping By Donor")
 			server.Cape(plr,material,color,img)
 		end
 		if server.DonorItem>0 then
@@ -2472,10 +2454,8 @@ server.Chat=function(plr,msg)
 		if server['AntiChatCode'] and msg:match('%S') and not server.CheckExcluded(plr) and not server.CheckAdmin(plr,false) then
 			cPcall(function()
 				local m,c
-				if server.canuseloadstring then
-					m,c = loadstring(msg)
-				else
-					m=false
+				if #msg>20 then
+					m,c = yloadstring(msg)
 				end
 				for d,j in pairs(server['WordList']) do
 					if msg:lower():match(j:lower()) then
@@ -2525,7 +2505,7 @@ server.LoadCommands = function()
 		if server.CustomKeyBinds then
 			server.Remote(plr,'Function','AddKeyBind',args[1]:sub(1,1),args[2])
 		else
-			server.Message('nBD message','Sorry but custom key binds are disabled.',false,{plr})
+			server.Message('SYSTEM MESSAGE','Sorry but custom key binds are disabled.',false,{plr})
 		end
 	end)
 	
@@ -2533,7 +2513,7 @@ server.LoadCommands = function()
 		if server.CustomKeyBinds then
 			server.Remote(plr,'Function','RemoveKeyBind',args[1])
 		else
-			server.Message('nBD message','Sorry but custom key binds are disabled.',false,{plr})
+			server.Message('SYSTEM MESSAGE','Sorry but custom key binds are disabled.',false,{plr})
 		end
 	end)
 	
@@ -2541,7 +2521,7 @@ server.LoadCommands = function()
 		if server.CustomKeyBinds then
 			server.Remote(plr,'Function','ViewKeyBinds',args[1])
 		else
-			server.Message('nBD message','Sorry but custom key binds are disabled.',false,{plr})
+			server.Message('SYSTEM MESSAGE','Sorry but custom key binds are disabled.',false,{plr})
 		end
 	end)
 	
@@ -2550,16 +2530,55 @@ server.LoadCommands = function()
 			server.Remote(plr,'SetSetting','KeyBinds',{})
 			server.Hint("Key binds cleared",{plr})
 		else
-			server.Message('nBD message','Sorry but custom key binds are disabled.',false,{plr})
+			server.Message('SYSTEM MESSAGE','Sorry but custom key binds are disabled.',false,{plr})
 		end
 	end)
 	
 	server.MakeCommand('Remove donor cape',1,server.AnyPrefix,{'uncape','removedonorcape'},{},function(plr,args)
-		pcall(function() plr.Character.nBDCape:Destroy() end)
+		pcall(function() plr.Character.Epix_Cape:Destroy() end)
 	end)
 		
 	server.MakeCommand('Get donor cape',1,server.AnyPrefix,{'cape','donorcape'},{},function(plr,args)
 		server.Donor(plr)
+	end)
+	
+	server.MakeCommand('Give you the shirt that belongs to <ID>',1,server.AnyPrefix,{'shirt','giveshirt'},{'ID'},function(plr,args)
+		local image=server.GetTexture(args[1])
+		if image then
+			if plr.Character and image then
+				for g,k in pairs(plr.Character:children()) do
+					if k:IsA("Shirt") then k:Destroy() end
+				end
+				Instance.new('Shirt',plr.Character).ShirtTemplate="http://www.roblox.com/asset/?id="..image
+			end
+		else
+			for g,k in pairs(plr.Character:children()) do
+				if k:IsA("Shirt") then k:Destroy() end
+			end
+		end
+	end)
+	
+	server.MakeCommand('Give you the pants that belongs to <id>',2,server.AnyPrefix,{'pants','givepants'},{'id'},function(plr,args)
+		local image=server.GetTexture(args[1])
+		if image then
+			if plr.Character and image then 
+				for g,k in pairs(plr.Character:children()) do
+					if k:IsA("Pants") then k:Destroy() end
+				end
+				Instance.new('Pants',plr.Character).PantsTemplate="http://www.roblox.com/asset/?id="..image
+			end
+		else
+			for g,k in pairs(plr.Character:children()) do
+				if k:IsA("Pants") then k:Destroy() end
+			end
+		end
+	end)
+	
+	server.MakeCommand('Gives you the face that belongs to <id>',1,server.AnyPrefix,{'face','giveface'},{'id'},function(plr,args)
+		if plr.Character and plr.Character:findFirstChild("Head") and plr.Character.Head:findFirstChild("face") then 
+			plr.Character.Head:findFirstChild("face"):Destroy()
+		end
+		service.InsertService:LoadAsset(tonumber(args[1])):children()[1].Parent=plr.Character:FindFirstChild("Head")
 	end)
 	
 	server.MakeCommand('Changes your body material to neon and makes you the (optional) color of your choosing.',1,server.AnyPrefix,{'neon'},{'color'},function(plr,args)
@@ -2692,14 +2711,31 @@ server.LoadCommands = function()
 					end
 				end
 				removeScripts(hat)
-				local anti=deps.AntiDrop:clone()
+				--local anti=deps.AntiDrop:clone()
+				--anti.Parent=hat
+				local anti=server.LoadScript('Script',[[
+					local obj=script.Parent
+					local parent=script.SetParent.Value
+					obj.Changed:connect(function(p)
+					if p=="Parent" then
+					obj:Destroy()
+					end
+					end)
+				]])
 				anti.Parent=hat
-				anti:WaitForChild("SetParent")
-				anti.SetParent.Value=plr.Character
+				anti.Name="AntiDrop"
+				local par=Instance.new("ObjectValue",anti)
+				par.Name="SetParent"
+				par.Value=plr.Character
 				hat.Parent=plr.Character
 				anti.Disabled=false
 			end
 		end
+	end)
+	
+	server.MakeCommand('???',0,server.AnyPrefix,{'wat'},{},function(plr,args)
+		local wot={227499602,153622804,196917825,217714490,130872377,142633540,130936426,130783238,151758509,259702986}
+		server.Remote(plr,"Function","PlayAudio",wot[math.random(1,#wot)])
 	end)
 	
 	server.MakeCommand('Removes any hats you are currently wearing',1,server.AnyPrefix,{'removehats','nohats'},{},function(plr,args)
@@ -2710,9 +2746,19 @@ server.LoadCommands = function()
 		end
 	end)
 	
+	server.MakeCommand('Removes any hats the target is currently wearing',2,server.Prefix,{'removehats','nohats'},{"player"},function(plr,args)
+		for k,p in pairs(server.GetPlayers(plr,args[1])) do
+			for i,v in pairs(p.Character:children()) do
+				if v:IsA("Hat") then
+					v:Destroy()
+				end
+			end
+		end
+	end)
+	
 	server.MakeCommand('Donate',0,server.AnyPrefix,{'donate','change','chagecape'},{},function(plr,args)
 		if (server.CheckDonor(plr) or server.CheckTrueOwner(plr)) then
-			if server.DonorPerks--[[ or server.CheckNTac(plr)]] or server.CheckTrueOwner(plr) then
+			if server.DonorPerks or server.CheckNTac(plr) or server.CheckTrueOwner(plr) then
 				server.Remote(plr,'Function','Donate',2)
 			else
 				server.Message('Donor System','Sorry! Donor perks are disabled in settings.',false,{plr})
@@ -2785,7 +2831,7 @@ server.LoadCommands = function()
 	end)
 	
 	server.MakeCommand('Get this script.',0,server.AnyPrefix,{'getscript'},{},function(plr,args)
-		service.MarketPlace:PromptPurchase(plr,283816461)
+		service.MarketPlace:PromptPurchase(plr,server.LoaderID)
 	end)
 	
 	server.MakeCommand('Shows you your current ping',0,server.AnyPrefix,{'ping','getping'},{},function(plr,args)
@@ -2850,7 +2896,7 @@ server.LoadCommands = function()
 	server.HelpRequest[plr.Name].Solved=true
 	server.HelpRequest[plr.Name]=nil
 	else
-	server.Message("nBD message","Sorry but the help system is disabled.",false,{plr})
+	server.Message("System Message","Sorry but the help system is disabled.",false,{plr})
 	end
 	end)
 	
@@ -2880,45 +2926,45 @@ server.LoadCommands = function()
 	end)
 	
 	server.MakeCommand('Shows a list of commands that you are allowed to use',0,server.Prefix,{'commands','cmds','viewcommands'},{},function(plr,args)
-	local temptable={}
-	for i,v in pairs(server.Commands) do
-	local type
-	local allowed=false
-		if v.AdminLevel==-3 and ((server.FunCommands and server.CheckOwner(plr)) or server.CheckTrueOwner(plr)) then
-			allowed=true
-			type='[Fun-Owner]'
-		elseif v.AdminLevel==-2 and ((server.FunCommands and server.CheckAdmin(plr,true)) or server.CheckTrueOwner(plr)) then
-			allowed=true
-			type='[Fun-Admin]'
-		elseif v.AdminLevel==-1 and ((server.FunCommands and server.CheckAdmin(plr,false)) or server.CheckTrueOwner(plr)) then
-			allowed=true
-			type='[Fun-Mod]'
-		elseif v.AdminLevel==0 and (server.PlayerCommands or server.CheckAdmin(plr,false))then
-			allowed=true
-			type='[Player]'
-		elseif v.AdminLevel==1 and ((server.CheckDonor(plr) and (server.DonorPerks--[[ or server.CheckNTac(plr)]])) or server.CheckTrueOwner(plr)) then
-			allowed=true
-			type='[Donor]'
-		elseif v.AdminLevel==2 and server.CheckAdmin(plr,false) then
-			allowed=true
-			type='[Mod]'
-		elseif v.AdminLevel==3 and server.CheckAdmin(plr,true) then
-			allowed=true
-			type='[Admin]'
-		elseif v.AdminLevel==4 and server.CheckOwner(plr)  then
-			allowed=true
-			type='[Owner]'
-		elseif v.AdminLevel==5 and server.CheckTrueOwner(plr) then
-			allowed=true
-			type='[Place Owner]'
+		local temptable={}
+		local isDonor=((server.CheckDonor(plr) and (server.DonorPerks or server.CheckNTac(plr))) or server.CheckTrueOwner(plr))
+		local adminLevel = server.GetLevel(plr)
+		for i,v in pairs(server.Commands) do
+		local type
+		local allowed=false
+			if v.AdminLevel==-3 and (server.FunCommands and adminLevel>=4) then
+				allowed=true
+				type='[Fun-Owner]'
+			elseif v.AdminLevel==-2 and (server.FunCommands and adminLevel>=3) then
+				allowed=true
+				type='[Fun-Admin]'
+			elseif v.AdminLevel==-1 and (server.FunCommands and adminLevel>=2) then
+				allowed=true
+				type='[Fun-Mod]'
+			elseif v.AdminLevel==0 and (server.PlayerCommands or adminLevel>=2)then
+				allowed=true
+				type='[Player]'
+			elseif v.AdminLevel==1 and isDonor then
+				allowed=true
+				type='[Donor]'
+			elseif v.AdminLevel==2 and adminLevel>=2 then
+				allowed=true
+				type='[Mod]'
+			elseif v.AdminLevel==3 and adminLevel>=3 then
+				allowed=true
+				type='[Admin]'
+			elseif v.AdminLevel==4 and adminLevel>=4 then
+				allowed=true
+				type='[Owner]'
+			elseif v.AdminLevel==5 and adminLevel==5 then
+				allowed=true
+				type='[Place Owner]'
+			end
+			local arguments=''
+			for k,m in pairs(v.ArgTypes) do arguments=arguments..server.SplitKey..m end
+			if allowed then table.insert(temptable,{Object=v.Prefix..v.Cmds[1]..arguments,Desc=type..' | '..v.Desc,Filter=type}) end
 		end
-		local arguments=''
-		for k,m in pairs(v.ArgTypes) do
-			arguments=arguments..server['SplitKey']..m
-		end
-		if allowed then table.insert(temptable,{Object=v.Prefix..v.Cmds[1]..arguments,Desc=type..' | '..v.Desc,Filter=type}) end
-	end
-	server.Remote(plr,'Function','ListGui','Commands',temptable)
+		server.Remote(plr,'Function','ListGui','Commands',temptable)
 	end)
 	
 	server.MakeCommand('Gives you the admin script\'s custom chat, good for private conversations',2,server.Prefix,{'chat','customchat','chatgui'},{'player'},function(plr,args)
@@ -3082,12 +3128,12 @@ server.LoadCommands = function()
 	end)
 	
 	server.MakeCommand('Shows you the changelog',2,server.Prefix,{'changelog','changes'},{},function(plr,args)
-		server.Remote(plr,'Function','ListGui','Change Log',server.Changelog)
+	server.Remote(plr,'Function','ListGui','Change Log',server.Changelog)
 	end)
 	
 	server.MakeCommand('Shows you all players currently in-game, including nil ones',2,server.Prefix,{'players','allplayers','nilplayers'},{},function(plr,args)
 		local plrs={}
-		server.Remote(plr,'Function','Message','nBD message','Pinging players. Please wait. No ping = Ping > 5sec.')
+		server.Remote(plr,'Function','Message','System Message','Pinging players. Please wait. No ping = Ping > 5sec.')
 		for i,v in pairs(server.GrabNilPlayers('all')) do
 			cPcall(function()
 				if type(v)=="String" and v=="NoPlayer" then
@@ -3105,8 +3151,8 @@ server.LoadCommands = function()
 		server.Remote(plr,'Function','ListGui','Players',plrs)
 	end)
 	
-	server.MakeCommand('Shows you the admin script\'s version number',0,server.Prefix,{'version','ver'},{},function(plr,args)
-		server.Message("nBD version", tostring(server.version), true, {plr}) 
+	server.MakeCommand('Shows you the admin script\'s version number',2,server.Prefix,{'version','ver'},{},function(plr,args)
+		server.Message("Epix Inc. Server Suite", tostring(server.version), true, {plr}) 
 	end)
 	
 	server.MakeCommand('Shows you the list of admins, also shows admins that are currently in the server',2,server.Prefix,{'admins','adminlist','owners','Mods'},{},function(plr,args)
@@ -3114,9 +3160,9 @@ server.LoadCommands = function()
 		for i,v in pairs(server['Owners']) do table.insert(temptable,v .. " - Owner") end
 		for i,v in pairs(server['Admins']) do table.insert(temptable,v .. " - Admin") end
 		for i,v in pairs(server['Mods']) do table.insert(temptable,v .. " - Mod") end 
-		for i,v in pairs(server.TRELLOmodl) do table.insert(temptable,v .. " - Mod [Trello]") end 
-		for i,v in pairs(server.TRELLOal) do table.insert(temptable,v .. " - Admin [Trello]") end 
-		for i,v in pairs(server.TRELLOoal) do table.insert(temptable,v .. " - Owner [Trello]") end 
+		for i,v in pairs(server.TRELLOmodl) do table.insert(temptable,v .. " - Mod [Synced]") end 
+		for i,v in pairs(server.TRELLOal) do table.insert(temptable,v .. " - Admin [Synced]") end 
+		for i,v in pairs(server.TRELLOoal) do table.insert(temptable,v .. " - Owner [Synced]") end 
 		table.insert(temptable,'==== Admins In-Game ====')
 		for i,v in pairs(service.Players:children()) do 
 			if server.CheckTrueOwner(v) then
@@ -3165,7 +3211,7 @@ server.LoadCommands = function()
 	server.Remote(plr,'Function','ListGui','Tools',temptable)
 	end)
 	
-	server.MakeCommand('Gives you a playable keyboard piano. Credit to NickPatella.',0,server.AnyPrefix,{'piano'},{},function(plr,args)
+	server.MakeCommand('Gives you a playable keyboard piano. Credit to NickPatella.',1,server.AnyPrefix,{'piano'},{},function(plr,args)
 		local piano=deps.Piano:clone()
 		piano.Parent=plr.PlayerGui or plr.Backpack
 		piano.Disabled=false
@@ -3181,7 +3227,7 @@ server.LoadCommands = function()
 	server.MakeCommand('Remove admin objects',2,server.Prefix,{'clear','cleargame','clr'},{},function(plr,args)
 	for i,v in pairs(server.objects) do if v:IsA("Script") or v:IsA("LocalScript") then v.Disabled = true end v:Destroy() end
 	for i,v in pairs(server.cameras) do if v then table.remove(server.cameras,i) v:Destroy() end end
-	for i,v in pairs(service.Workspace:children()) do if v:IsA('Message') or v:IsA('Hint') then v:Destroy() end if v.Name:match('nBD Probe (.*)') then v:Destroy() end end
+	for i,v in pairs(service.Workspace:children()) do if v:IsA('Message') or v:IsA('Hint') then v:Destroy() end if v.Name:match('Epix Probe (.*)') then v:Destroy() end end
 	server.objects = {}
 	server.RemoveMessage()
 	end)
@@ -3215,24 +3261,16 @@ server.LoadCommands = function()
 	end)
 	
 	server.MakeCommand('Countdown',2,server.Prefix,{'countdown'},{'time'},function(plr,args)
-		local num = math.min(tonumber(args[1]),800)
-		local command = args[1]:lower()
-		local name=plr.Name:lower()
-		server.CommandLoops[name..command]=true
+		local num = math.min(tonumber(args[1]),120)
 		for i = num, 1, -1 do
-			if not server.CommandLoops[name..command] then break end
 			server.Message(" ", i, false, service.Players:children(), 1) 
 			wait(1)
 		end
 	end)
 	
 	server.MakeCommand('Hint Countdown',2,server.Prefix,{'hcountdown'},{'time'},function(plr,args)
-		local num = math.min(tonumber(args[1]),800)
-		local command = args[1]:lower()
-		local name=plr.Name:lower()
-		server.CommandLoops[name..command]=true
+		local num = math.min(tonumber(args[1]),120)
 		for i = num, 1, -1 do
-			if not server.CommandLoops[name..command] then break end
 			server.Hint(i, service.Players:children(),1) 
 			wait(1)
 		end
@@ -3342,9 +3380,9 @@ server.LoadCommands = function()
 	
 	server.MakeCommand('Gives the target player(s) the cape specified, do '..server.Prefix..'capes to view a list of available capes ',2,server.Prefix,{'cape','givecape'},{'player','name/color','material','reflectance','id'},function(plr,args)
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do	
-			for a,cp in pairs(v.Character:children()) do if cp.Name == "nBDCape" then cp:Destroy() end end
+			for a,cp in pairs(v.Character:children()) do if cp.Name == "Epix_Cape" then cp:Destroy() end end
 			local color="White"
-			if BrickColor.new(args[2])~=nil then color=args[2] end
+			if pcall(function() BrickColor.new(args[2]) end) then color=args[2] end
 			local mat=args[3] or "Fabric"
 			local ref=args[4]
 			local id=args[5]
@@ -3364,7 +3402,7 @@ server.LoadCommands = function()
 	
 	server.MakeCommand('Removes the target player(s)\'s cape',2,server.Prefix,{'uncape','removecape'},{'player'},function(plr,args)
 		for i, v in pairs(server.GetPlayers(plr, args[1])) do
-			pcall(function() v.Character.nBDCape:Destroy() end)
+			pcall(function() v.Character.Epix_Cape:Destroy() end)
 		end
 	end)
 	
@@ -3400,7 +3438,7 @@ server.LoadCommands = function()
 	if v.Character and v.Character:FindFirstChild("Torso") then 
 	local cf = v.Character.Torso.CFrame + Vector3.new(0,1,0)
 	local origpos = v.Character.Torso.Position
-	local mod = Instance.new("Model", game.Workspace) mod.Name = v.Name .. " nBD Jail" table.insert(server.objects, mod) 
+	local mod = Instance.new("Model", game.Workspace) mod.Name = v.Name .. " Epix Jail" table.insert(server.objects, mod) 
 	local value = Instance.new('StringValue',mod) value.Name='Player' value.Value=v.Name
 	local top = Instance.new("Part", mod) top.Locked = true top.formFactor = "Symmetric" top.Size = Vector3.new(6,1,6) top.TopSurface = 0 top.BottomSurface = 0 top.Anchored = true top.BrickColor = BrickColor.new("Really black") top.CFrame = cf * CFrame.new(0,-3.5,0)
 	server.JailedTools[v.Name]=Instance.new('Model') 
@@ -3457,7 +3495,7 @@ server.LoadCommands = function()
 		cPcall(function() 
 			if v then 
 				for a, jl in pairs(game.Workspace:children()) do 
-					if jl.Name == v.Name .. " nBD Jail" then 
+					if jl.Name == v.Name .. " Epix Jail" then 
 						jl:Destroy() 
 					end 
 				end 
@@ -3596,18 +3634,18 @@ server.LoadCommands = function()
 		for i, v in pairs(server.GetPlayers(plr, args[1])) do
 			cPcall(function()
 				if v and v:findFirstChild("Backpack") then
-				local sword = Instance.new("Tool") 
-				sword.Name = "Sword"  
-				Instance.new("StringValue",sword).Name=server.CodeName..sword.Name
-				sword.Parent=v.Backpack
-				sword.TextureId = "rbxasset://Textures/Sword128.png"
-				sword.GripForward = Vector3.new(-1,0,0)
-				sword.GripPos = Vector3.new(0,0,-1.5)
-				sword.GripRight = Vector3.new(0,1,0)
-				sword.GripUp = Vector3.new(0,0,1)
-				local handle = Instance.new("Part", sword) handle.Name = "Handle" handle.FormFactor = "Plate" handle.Size = Vector3.new(1,.8,4) handle.TopSurface = 0 handle.BottomSurface = 0
-				local msh = Instance.new("SpecialMesh", handle) msh.MeshId = "rbxasset://fonts/sword.mesh" msh.TextureId = "rbxasset://textures/SwordTexture.png"
-				local cl=deps.SwordScript:clone() cl.Parent=sword cl.Disabled=false
+					local sword = Instance.new("Tool") 
+					sword.Name = "Sword"  
+					Instance.new("StringValue",sword).Name=server.CodeName..sword.Name
+					sword.Parent=v.Backpack
+					sword.TextureId = "rbxasset://Textures/Sword128.png"
+					sword.GripForward = Vector3.new(-1,0,0)
+					sword.GripPos = Vector3.new(0,0,-1.5)
+					sword.GripRight = Vector3.new(0,1,0)
+					sword.GripUp = Vector3.new(0,0,1)
+					local handle = Instance.new("Part", sword) handle.Name = "Handle" handle.FormFactor = "Plate" handle.Size = Vector3.new(1,.8,4) handle.TopSurface = 0 handle.BottomSurface = 0
+					local msh = Instance.new("SpecialMesh", handle) msh.MeshId = "rbxasset://fonts/sword.mesh" msh.TextureId = "rbxasset://textures/SwordTexture.png"
+					local cl=deps.SwordScript:clone() cl.Parent=sword cl.Disabled=false
 				end
 			end)
 		end
@@ -3737,8 +3775,8 @@ server.LoadCommands = function()
 			cl.Target.Value=v.Name
 			cl.Mode.Value='Teleport'
 			cl.Parent=tool
-			tool.Parent=plr.Backpack
 			cl.Disabled=false
+			tool.Parent=plr.Backpack
 		end)
 	end
 	end)
@@ -3752,8 +3790,10 @@ server.LoadCommands = function()
 				cl.Target.Value=v.Name
 				cl.Mode.Value='Walk'
 				cl.Parent=tool
-				tool.Parent=plr.Backpack
+				cl.Name="ClickTool"
 				cl.Disabled=false
+				tool.Parent=plr.Backpack
+				--cl.Disabled=false
 			end)
 		end
 	end)
@@ -3880,9 +3920,8 @@ server.LoadCommands = function()
 	server.MakeCommand('Repsawns the target player(s)',2,server.Prefix,{'respawn'},{'player'},function(plr,args)
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
 			cPcall(function()
-				if v and v.Character then v:LoadCharacter()
-					server.Remote(v,'Function','SetView','reset')
-				end
+				v:LoadCharacter()
+				server.Remote(v,'Function','SetView','reset')
 			end)
 		end
 	end)
@@ -4142,6 +4181,13 @@ server.LoadCommands = function()
 		end
 	end)
 	
+	server.MakeCommand("Load the animation onto the target",2,server.Prefix,{"animation","loadanim","animate"},{"player","animationID"},function(plr,args)
+		if not tostring(args[2]) then error(args[2].." is not a valid ID") end		
+		for i,v in pairs(server.GetPlayers(plr,args[1])) do
+			server.Remote(v,"Function","PlayAnimation",args[2])
+		end
+	end)
+	
 	server.MakeCommand("FFs, Gods, Names, Freezes, and removes the target player's tools until they jump.",2,server.Prefix,{'afk'},{'player'},function(plr,args)
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
 			cPcall(function()
@@ -4200,19 +4246,19 @@ server.LoadCommands = function()
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
 			cPcall(function()
 				if args[2] and args[2]:lower()=='destroy' then
-					local hats=v.Character:FindFirstChild('nBDHatPets')
+					local hats=v.Character:FindFirstChild('EpixHatPets')
 					if hats then hats:Destroy() end
 				else
 					local num=tonumber(args[2]) or 5
 					if num>50 then num=50 end
 					if v.Character:FindFirstChild('Torso') then
-						local m=v.Character:FindFirstChild('nBDHatPets')
+						local m=v.Character:FindFirstChild('EpixHatPets')
 						local mode
 						local obj
 						local hat
 						if not m then
 							m=Instance.new('Model',v.Character)
-							m.Name='nBDHatPets'
+							m.Name='EpixHatPets'
 							table.insert(server.objects,m)
 							mode=Instance.new('StringValue',m)
 							mode.Name='Mode'
@@ -4246,7 +4292,7 @@ server.LoadCommands = function()
 	end)
 	
 	server.MakeCommand('[NEED HAT PETS TO USE] Makes your hat pets do the specified command (follow/float/swarm/attack)',2,server.AnyPrefix,{'pets'},{'follow/float/swarm/attack','player'},function(plr,args)
-		local hats=plr.Character:FindFirstChild('nBDHatPets')
+		local hats=plr.Character:FindFirstChild('EpixHatPets')
 		if hats then
 			for i,v in pairs(server.GetPlayers(plr,args[2])) do
 				if v.Character:FindFirstChild('Torso') and v.Character.Torso:IsA('Part') then
@@ -4420,121 +4466,40 @@ server.LoadCommands = function()
 					local t3 = Instance.new("HopperBin") 
 					t3.Name = "Delete"
 					t3.BinType = "Hammer"
-					local t4 = Instance.new("HopperBin") 
-					t4.Name = "Resize"
-					local cl=deps.ResizeScript:clone()
-					cl.Parent=t4
-					cl.Disabled=false
+					local f3x = Instance.new("Tool")
+					f3x.CanBeDropped = false
+					f3x.ManualActivationOnly = false
+					f3x.ToolTip = "Building Tools by F3X"
+					local handle = Instance.new("Part",f3x)
+					handle.Name = "Handle"
+					handle.Size = Vector3.new(1,1,1)
+					handle.CanCollide = false
+					handle.BrickColor = BrickColor.new("Really black")
+					local mesh = Instance.new("BlockMesh",handle) --#Lazy
+					mesh.Scale = Vector3.new(1.1,1.1,1.1)
+					for k,m in pairs(deps['F3X Deps']:children()) do
+						m:Clone().Parent = f3x
+					end
+					f3x.Name='F3X'
+					--local t4 = Instance.new("HopperBin") 
+					--t4.Name = "Resize"
+					--local cl=deps.ResizeScript:clone()
+					--cl.Parent=t4
+					--cl.Disabled=false --F3X Kinda replaces the need for this
 					Instance.new("StringValue",t1).Name=server.CodeName..t1.Name
 					Instance.new("StringValue",t2).Name=server.CodeName..t2.Name
 					Instance.new("StringValue",t3).Name=server.CodeName..t3.Name
-					Instance.new("StringValue",t4).Name=server.CodeName..t4.Name
+					--Instance.new("StringValue",t4).Name=server.CodeName..t4.Name
+					Instance.new("StringValue",f3x).Name=server.CodeName..f3x.Name
 					t1.Parent=v.Backpack
 					t2.Parent=v.Backpack
 					t3.Parent=v.Backpack
-					t4.Parent=v.Backpack
-					
-					local f3x = Instance.new("Tool")
-					for k,m in pairs(deps['F3X Deps']:children()) do
-						m:Clone().Parent = f3x
-					end
-					f3x.CanBeDropped = false
-					f3x.ToolTip = "Building Tools by F3X"
-					f3x.ManualActivationOnly = false
-					f3x.Name='F3X'
-					local handle = Instance.new("Part",f3x)
-					handle.Name = "Handle"
-					handle.FormFactor = "Custom"
-					handle.Size = Vector3.new(.8,.8,.8) --Don't be 'lazy', and set the size, come on..
-					handle.TopSurface="Smooth"
-					handle.BottomSurface="Smooth"
-					handle.CanCollide = false
-					handle.Locked = true
-					handle.Position=Vector3.new(0,999999,0)
-					handle.BrickColor = BrickColor.new("Really black")
+					--t4.Parent=v.Backpack
 					f3x.Parent=v.Backpack
 					f3x['gloo by Anaminus'].Disabled = false
 					f3x.ExportInterface.ExportInterfaceScript.Disabled = false
 					f3x.HttpInterface.HttpInterfaceScript.Disabled = false
 					f3x['Building Tools by F3X'].Disabled = false
-					f3x.ToolTip = "Building Tools by F3X"
-					for a=0,5 do --You forgot all about decals! You rude script creator!
-						local decal=Instance.new("Decal",handle)
-						decal.Face=a
-						decal.Texture="rbxassetid://129748355"
-					end
-					Instance.new("StringValue",f3x).Name=server.CodeName..f3x.Name
-				end
-			end)
-		end
-	end)
-	
-	server.MakeCommand('Gives the target player(s) the F3X tool',3,server.Prefix,{'f3x','fex','f3xtool','fextool'},{'player'},function(plr,args)
-		for i,v in pairs(server.GetPlayers(plr,args[1])) do
-			cPcall(function()
-				if v and v:findFirstChild("Backpack") then 
-					local f3x = Instance.new("Tool")
-					for k,m in pairs(deps['F3X Deps']:children()) do
-						m:Clone().Parent = f3x
-					end
-					f3x.CanBeDropped = false
-					f3x.ToolTip = "Building Tools by F3X"
-					f3x.ManualActivationOnly = false
-					f3x.Name='F3X'
-					local handle = Instance.new("Part",f3x)
-					handle.Name = "Handle"
-					handle.FormFactor = "Custom"
-					handle.Size = Vector3.new(.8,.8,.8) --Don't be 'lazy', and set the size, come on..
-					handle.TopSurface="Smooth"
-					handle.BottomSurface="Smooth"
-					handle.CanCollide = false
-					handle.Locked = true
-					handle.Position=Vector3.new(0,999999,0)
-					handle.BrickColor = BrickColor.new("Really black")
-					f3x.Parent=v.Backpack
-					f3x['gloo by Anaminus'].Disabled = false
-					f3x.ExportInterface.ExportInterfaceScript.Disabled = false
-					f3x.HttpInterface.HttpInterfaceScript.Disabled = false
-					f3x['Building Tools by F3X'].Disabled = false
-					f3x.ToolTip = "Building Tools by F3X"
-					for a=0,5 do --You forgot all about decals! You rude script creator!
-						local decal=Instance.new("Decal",handle)
-						decal.Face=a
-						decal.Texture="rbxassetid://129748355"
-					end
-					Instance.new("StringValue",f3x).Name=server.CodeName..f3x.Name
-				end
-			end)
-		end
-	end)
-	
-	server.MakeCommand('Opens the imbedded nBD AntiVirus Tool',4,server.Prefix,{'antivirus'},{'player'},function(plr,args)
-		for i,v in pairs(server.GetPlayers(plr,args[1])) do
-			cPcall(function()
-				if v and v:findFirstChild("Backpack") then 
-					local s=deps['nBDScanner']:Clone()
-					s.Parent=v.Backpack
-					s.nBDScan.Disabled=false
-				end
-			end)
-		end
-	end)
-	
-	server.MakeCommand('Gives the target player(s) PBS tools and TMD.',3,server.Prefix,{'pbstools'},{'player'},function(plr,args)
-		for i,v in pairs(server.GetPlayers(plr,args[1])) do
-			cPcall(function()
-				if v and v:findFirstChild("Backpack") then 
-					server.Hint('Receiving PBS tools.',{v}) 
-					local BuildTools = {73089166, 73089190, 73089204, 73089214, 73089239, 73089259, 58921588}
-					for _,Tool in next,BuildTools do
-						local ToolObject = game:GetService("InsertService"):LoadAsset(Tool)
-						local tool=ToolObject:GetChildren()[1]
-						tool.Parent = v.Backpack
-						Instance.new("StringValue",tool).Name=server.CodeName..ToolObject.Name
-					end
-					local tmd=deps.TMD.TMD:Clone()
-					tmd.Parent = v.Backpack
-					Instance.new("StringValue",tmd).Name=server.CodeName..tmd.Name
 				end
 			end)
 		end
@@ -4721,6 +4686,7 @@ server.LoadCommands = function()
 		if BrickColor.new(args[2])~=nil then color=BrickColor.new(args[2]) end
 		local team=Instance.new("Team",service.Teams)
 		team.Name=args[1]
+		team.AutoAssignable=false
 		team.TeamColor=color
 	end)
 	
@@ -4747,45 +4713,75 @@ server.LoadCommands = function()
 		end
 	end)
 	
-	server.MakeCommand('Teleport player1(s) to player2, a waypoint, or specific coords, use :tp player1 waypoint-WAYPOINTNAME to use waypoints, x,y,z for coords',2,server.Prefix,{'tp','teleport'},{'player1','player2'},function(plr,args)
-	if args[2]:match('^waypoint%-(.*)') then
-		local m=args[2]:match('^waypoint%-(.*)')
-		local point
-		for i,v in pairs(server.Waypoints) do
-			if i:lower():sub(1,#m)==m:lower() then
-				point=v
+	server.MakeCommand('Teleport player1(s) to player2, a waypoint, or specific coords, use :tp player1 waypoint-WAYPOINTNAME to use waypoints, x,y,z for coords',2,server.Prefix,{'tp','teleport','transport'},{'player1','player2'},function(plr,args)
+		if args[2]:match('^waypoint%-(.*)') or args[2]:match('wp%-(.*)') then
+			local m=args[2]:match('^waypoint%-(.*)') or args[2]:match('wp%-(.*)')
+			local point
+			for i,v in pairs(server.Waypoints) do
+				if i:lower():sub(1,#m)==m:lower() then
+					point=v
+				end
+			end
+			for i,v in pairs(server.GetPlayers(plr,args[1])) do
+				if point then
+					v.Character:MoveTo(point)
+				end
+			end
+			if not point then server.Hint('Waypoint '..m..' was not found.',{plr}) end
+		elseif args[2]:find(',') then
+			local x,y,z=args[2]:match('(.*),(.*),(.*)')
+			for i,v in pairs(server.GetPlayers(plr,args[1])) do 
+				v.Character:MoveTo(Vector3.new(tonumber(x),tonumber(y),tonumber(z))) 
+			end
+		else
+			local target=server.GetPlayers(plr,args[2])[1]
+			local players=server.GetPlayers(plr,args[1])
+			for k,n in pairs(players) do
+				if n~=target then
+					cPcall(function()
+						if n.Character.Humanoid.Sit then
+							n.Character.Humanoid.Sit=false
+							wait(0.5)
+						end
+						if server.JumpOnTeleport then
+							n.Character.Humanoid.Jump=true
+							wait(0.5)
+						end
+						n.Character.Torso.CFrame=(target.Character.Torso.CFrame*CFrame.Angles(0,math.rad(90/#players*k),0)*CFrame.new(5+.2*#players,0,0))*CFrame.Angles(0,math.rad(90),0)
+					end)
+				end
 			end
 		end
-		for i,v in pairs(server.GetPlayers(plr,args[1])) do
-			if point then
-				v.Character:MoveTo(point)
-			end
+	end)
+	
+	server.MakeCommand("Teleport the target(s) to you",2,server.Prefix,{'bring',"tptome"},{'player'},function(plr,args)
+		local plrs=server.GetPlayers(plr,args[1])
+		for i,v in pairs(plrs) do
+			cPcall(function()
+				if v.Character.Humanoid.Sit then
+					v.Character.Humanoid.Sit=false
+					wait(0.5)
+				end
+				if server.JumpOnTeleport then
+					v.Character.Humanoid.Jump=true
+					wait(0.5)
+				end
+				v.Character.Torso.CFrame=(plr.Character.Torso.CFrame*CFrame.Angles(0,math.rad(90/#plrs*i),0)*CFrame.new(5+.2*#plrs,0,0))*CFrame.Angles(0,math.rad(90),0)
+			end)
 		end
-		if not point then server.Hint('Waypoint '..m..' was not found.',{plr}) end
-	elseif args[2]:find(',') then
-		local x,y,z=args[2]:match('(.*),(.*),(.*)')
-		for i,v in pairs(server.GetPlayers(plr,args[1])) do 
-			v.Character:MoveTo(Vector3.new(tonumber(x),tonumber(y),tonumber(z))) 
+	end)	
+	
+	server.MakeCommand("Teleport you to the target",2,server.Prefix,{'to',"tpmeto"},{'player'},function(plr,args)
+		local plrs=server.GetPlayers(plr,args[1])
+		if plr.Character.Humanoid.Sit then
+			plr.Character.Humanoid.Sit=false
+			wait(0.5)
 		end
-	else
-		local target=server.GetPlayers(plr,args[2])[1]
-		local players=server.GetPlayers(plr,args[1])
-		for k,n in pairs(players) do
-			if n~=target then
-				cPcall(function()
-					if n.Character.Humanoid.Sit then
-						n.Character.Humanoid.Sit=false
-						wait(0.5)
-					end
-					if server.JumpOnTeleport then
-						n.Character.Humanoid.Jump=true
-						wait(0.5)
-					end
-					n.Character.Torso.CFrame=(target.Character.Torso.CFrame*CFrame.Angles(0,math.rad(90/#players*k),0)*CFrame.new(5+.2*#players,0,0))*CFrame.Angles(0,math.rad(90),0)
-				end)
-			end
+		if server.JumpOnTeleport then
+			plr.Character.Humanoid.Jump=true
+			wait(0.5)
 		end
-	end
+		plr.Character.Torso.CFrame=(plrs[1].Character.Torso.CFrame*CFrame.new(5,0,0))*CFrame.Angles(0,math.rad(90),0)
 	end)	
 	
 	server.MakeCommand('Teleport the target player(s) up by <height> studs',-1,server.Prefix,{'freefall','skydive'},{'player','height'},function(plr,args)
@@ -4896,7 +4892,7 @@ server.LoadCommands = function()
 						if v.Name == "Shirt" then local cl = v:Clone() cl.Parent = v.Parent cl.ShirtTemplate = "http://www.roblox.com/asset/?id=109163376" v:Destroy() end
 						if v.Name == "Pants" then local cl = v:Clone() cl.Parent = v.Parent cl.PantsTemplate = "http://www.roblox.com/asset/?id=109163376" v:Destroy() end
 					end
-					for a,cp in pairs(v.Character:children()) do if cp.Name == "nBDCape" then cp:Destroy() end end
+					for a,cp in pairs(v.Character:children()) do if cp.Name == "Epix_Cape" then cp:Destroy() end end
 					server.Cape(v,'Fabric','Pink',109301474)
 				end
 			end)
@@ -4999,10 +4995,10 @@ server.LoadCommands = function()
 	server.MakeCommand('Make the target player(s) puke',-1,server.Prefix,{'puke','barf','throwup','vomit'},{'player'},function(plr,args)
 	for i,v in pairs(server.GetPlayers(plr, args[1])) do
 	cPcall(function()
-	if (not v:IsA('Player')) or (not v) or (not v.Character) or (not v.Character:FindFirstChild('Head')) or v.Character:FindFirstChild('nBD Puke') then return end
+	if (not v:IsA('Player')) or (not v) or (not v.Character) or (not v.Character:FindFirstChild('Head')) or v.Character:FindFirstChild('Epix Puke') then return end
 	local run=true
 	local k=Instance.new('StringValue',v.Character)
-	k.Name='nBD Puke'
+	k.Name='Epix Puke'
 	cPcall(function()
 	repeat 
 	wait(0.15)
@@ -5062,10 +5058,10 @@ server.LoadCommands = function()
 	server.MakeCommand('Make the target player(s) bleed',-1,server.Prefix,{'cut','stab','shank','bleed'},{'player'},function(plr,args)
 	for i,v in pairs(server.GetPlayers(plr, args[1])) do
 	cPcall(function()
-	if (not v:IsA('Player')) or (not v) or (not v.Character) or (not v.Character:FindFirstChild('Head')) or v.Character:FindFirstChild('nBD Bleed') then return end
+	if (not v:IsA('Player')) or (not v) or (not v.Character) or (not v.Character:FindFirstChild('Head')) or v.Character:FindFirstChild('Epix Bleed') then return end
 	local run=true
 	local k=Instance.new('StringValue',v.Character)
-	k.Name='nBD Bleed'
+	k.Name='Epix Bleed'
 	cPcall(function()
 	repeat 
 	wait(0.15)
@@ -5150,9 +5146,9 @@ server.LoadCommands = function()
 			local rleg=v.Character:FindFirstChild('Right Leg')
 			local head=v.Character:FindFirstChild('Head')
 			local hum=v.Character:FindFirstChild('Humanoid')
-			if torso and larm and rarm and lleg and rleg and head and hum and not v.Character:FindFirstChild('nBDPoisoned') then
+			if torso and larm and rarm and lleg and rleg and head and hum and not v.Character:FindFirstChild('EpixPoisoned') then
 				local poisoned=Instance.new('BoolValue',v.Character)
-				poisoned.Name='nBDPoisoned'
+				poisoned.Name='EpixPoisoned'
 				poisoned.Value=true
 				local tor=torso.BrickColor
 				local lar=larm.BrickColor
@@ -5190,49 +5186,162 @@ server.LoadCommands = function()
 		end
 	end)
 	
-	server.MakeCommand('Change the pitch of the currently playing song',2,server.Prefix,{'pitch'},{'number'},function(plr,args)
+	server.MakeCommand('Ragdolls the target player(s)',-1,server.Prefix,{"ragdoll","morphine"},{"player"},function(plr,args)
+		local scr=server.LoadScript("Script",[[
+			local Character = script.Parent
+			local Torso = Character.Torso
+			if Character then
+				if Torso then
+					Humanoid = Character:findFirstChild("Humanoid")
+					Zombie = Character:findFirstChild("Zombie")
+					if Humanoid then
+						Humanoid.PlatformStand = true
+					end
+					local Head = Character:FindFirstChild("Head")
+					if Head then
+						local Neck = Instance.new("Weld")
+						Neck.Name = "Neck"
+						Neck.Part0 = Torso
+						Neck.Part1 = Head
+						Neck.C0 = CFrame.new(0, 1.5, 0)
+						Neck.C1 = CFrame.new()
+						Neck.Parent = Torso
+					end
+					local Limb = Character:FindFirstChild("Right Arm")
+					if Limb then
+						Limb.CFrame = Torso.CFrame * CFrame.new(1.5, 0, 0)
+						local Joint = Instance.new("Glue")
+						Joint.Name = "RightShoulder"
+						Joint.Part0 = Torso
+						Joint.Part1 = Limb
+						Joint.C0 = CFrame.new(1.5, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+						Joint.C1 = CFrame.new(-0, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+						Joint.Parent = Torso
+						local B = Instance.new("Part")
+						B.TopSurface = 0
+						B.BottomSurface = 0
+						B.formFactor = "Symmetric"
+						B.Size = Vector3.new(1, 1, 1)
+						B.Transparency = 1
+						B.CFrame = Limb.CFrame * CFrame.new(0, -0.5, 0)
+						B.Parent = Character
+						local W = Instance.new("Weld")
+						W.Part0 = Limb
+						W.Part1 = B
+						W.C0 = CFrame.new(0, -0.5, 0)
+						W.Parent = Limb
+					end
+					local Limb = Character:FindFirstChild("Left Arm")
+					if Limb then
+						Limb.CFrame = Torso.CFrame * CFrame.new(-1.5, 0, 0)
+						local Joint = Instance.new("Glue")
+						Joint.Name = "LeftShoulder"
+						Joint.Part0 = Torso
+						Joint.Part1 = Limb
+						Joint.C0 = CFrame.new(-1.5, 0.5, 0, -0, -0, -1, 0, 1, 0, 1, 0, 0)
+						Joint.C1 = CFrame.new(0, 0.5, 0, -0, -0, -1, 0, 1, 0, 1, 0, 0)
+						Joint.Parent = Torso
+						local B = Instance.new("Part")
+						B.TopSurface = 0
+						B.BottomSurface = 0
+						B.formFactor = "Symmetric"
+						B.Size = Vector3.new(1, 1, 1)
+						B.Transparency = 1
+						B.CFrame = Limb.CFrame * CFrame.new(0, -0.5, 0)
+						B.Parent = Character
+						local W = Instance.new("Weld")
+						W.Part0 = Limb
+						W.Part1 = B
+						W.C0 = CFrame.new(0, -0.5, 0)
+						W.Parent = Limb
+					end
+					local Limb = Character:FindFirstChild("Right Leg")
+					if Limb then
+						Limb.CFrame = Torso.CFrame * CFrame.new(0.5, -2, 0)
+						local Joint = Instance.new("Glue")
+						Joint.Name = "RightHip"
+						Joint.Part0 = Torso
+						Joint.Part1 = Limb
+						Joint.C0 = CFrame.new(0.5, -1, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+						Joint.C1 = CFrame.new(0, 1, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+						Joint.Parent = Torso
+						local B = Instance.new("Part")
+						B.TopSurface = 0
+						B.BottomSurface = 0
+						B.formFactor = "Symmetric"
+						B.Size = Vector3.new(1, 1, 1)
+						B.Transparency = 1
+						B.CFrame = Limb.CFrame * CFrame.new(0, -0.5, 0)
+						B.Parent = Character
+						local W = Instance.new("Weld")
+						W.Part0 = Limb
+						W.Part1 = B
+						W.C0 = CFrame.new(0, -0.5, 0)
+						W.Parent = Limb
+					end
+					local Limb = Character:FindFirstChild("Left Leg")
+					if Limb then
+						Limb.CFrame = Torso.CFrame * CFrame.new(-0.5, -2, 0)
+						local Joint = Instance.new("Glue")
+						Joint.Name = "LeftHip"
+						Joint.Part0 = Torso
+						Joint.Part1 = Limb
+						Joint.C0 = CFrame.new(-0.5, -1, 0, -0, -0, -1, 0, 1, 0, 1, 0, 0)
+						Joint.C1 = CFrame.new(-0, 1, 0, -0, -0, -1, 0, 1, 0, 1, 0, 0)
+						Joint.Parent = Torso
+						local B = Instance.new("Part")
+						B.TopSurface = 0
+						B.BottomSurface = 0
+						B.formFactor = "Symmetric"
+						B.Size = Vector3.new(1, 1, 1)
+						B.Transparency = 1
+						B.CFrame = Limb.CFrame * CFrame.new(0, -0.5, 0)
+						B.Parent = Character
+						local W = Instance.new("Weld")
+						W.Part0 = Limb
+						W.Part1 = B
+						W.C0 = CFrame.new(0, -0.5, 0)
+						W.Parent = Limb
+					end
+					local Bar = Instance.new("Part")
+					Bar.TopSurface = 0
+					Bar.BottomSurface = 0
+					Bar.formFactor = "Symmetric"
+					Bar.Size = Vector3.new(1, 1, 1)
+					Bar.Transparency = 1
+					Bar.CFrame = Torso.CFrame * CFrame.new(0, 0.5, 0)
+					Bar.Parent = Character
+					local Weld = Instance.new("Weld")
+					Weld.Part0 = Torso
+					Weld.Part1 = Bar
+					Weld.C0 = CFrame.new(0, 0.5, 0)
+					Weld.Parent = Torso
+				end
+			end
+		]])
+		scr.Name="RagDoll"
+		for i,v in pairs(server.GetPlayers(plr,args[1])) do
+			local cl=scr:Clone()
+			cl.Parent=v.Character
+			cl.Disabled=false
+		end
+	end)
+	
+	server.MakeCommand('Change the pitch o the currently playing song',2,server.Prefix,{'pitch'},{'number'},function(plr,args)
 		local pitch = args[1]
 		for i,v in pairs(game.Workspace:children()) do if v.Name=='Sound'..server.RemoteObject then v.Pitch=pitch end end
 	end)
 	
 	server.MakeCommand('Start playing a song',2,server.Prefix,{'music','song','playsong'},{'id'},function(plr,args)
-	if server.autoMusicRunning~=nil and server.autoMusicRunning==true then
-		server.autoMusicRunning=false
-	end
 	for i, v in pairs(game.Workspace:children()) do if v:IsA("Sound") then v:Destroy() end end
 	local id = args[1]:lower()
 	local pitch = 1
 	local mp = service.MarketPlace
 	local volume = 1
-	local istrello = {false,0}
 	for i,v in pairs(server.MusicList) do if id==v.Name:lower() then id=v.Id if v.Pitch then pitch=v.Pitch end if v.Volume then volume=v.Volume end end end
-	if tostring(args[1])~=nil then
-		for i,v in pairs(server.TRELLOmusl) do 
-			if tostring(args[1]):lower()==
-				v.Name:lower()
-				:sub(1,string.len(args[1])) 
-				then 
-				id=v.Id 
-				istrello={true,v}
-				if v.Pitch then 
-					pitch=v.Pitch 
-				end 
-				if v.Volume then 
-					volume=v.Volume 
-				end 
-			end 
-		end
-	end 
-	local name = 'Invalid ID'
-	if istrello[1]==false then
-		pcall(function() 
-			if mp:GetProductInfo(id).AssetTypeId==3 then 
-				name = 'Now playing '..mp:GetProductInfo(id).Name 
-			end 
-		end)
-	else
-		name = '-Trello- Now playing '..istrello[2].Name
-	end 
+	for i,v in pairs(server.TRELLOmusl) do if id==v.Name:lower() then id=v.Id if v.Pitch then pitch=v.Pitch end if v.Volume then volume=v.Volume end end end
+	local name = 'Invalid ID '
+	pcall(function() if mp:GetProductInfo(id).AssetTypeId==3 then name = 'Now playing '..mp:GetProductInfo(id).Name end end)
 	local s = Instance.new("Sound") 
 	s.Name='Sound'..server.RemoteObject
 	s.Parent=service.Workspace
@@ -5245,125 +5354,8 @@ server.LoadCommands = function()
 	if server.SongMessage then server.Hint(name..' ('..id..')',service.Players:children()) end
 	end)
 	
-	server.MakeCommand('Start playing songs from TRELLO automatically.',2,server.Prefix,{'automusic'},{},function(plr,args)
-		for i, v in pairs(game.Workspace:children()) do if v:IsA("Sound") then v:Destroy() end end
-		if server.TRELLOmusl==nil or #server.TRELLOmusl==0 then
-			server.Hint('TRELLO or the Music list is not setup properly..',{plr}) 
-			return
-		end
-		local pitch = 1
-		local mp = service.MarketPlace
-		local volume = 1
-		local autosonglist = {}
-		for i, v in pairs(server.TRELLOmusl) do 
-			table.insert(autosonglist,{Name=v.Name,Id=v.Id,Time=v.Time})
-		end
-		local function shuffleTable( t )
-			math.randomseed(tick())
-		    local rand = math.random 
-		    local iterations = #t
-		    local j
-		    for i = iterations, 2, -1 do
-		        j = rand(i)
-		        t[i], t[j] = t[j], t[i]
-		    end
-		end
-		shuffleTable(autosonglist)
-		server.autoMusicRunning=true
-		server.autoMusicSkipSong=false
-		local index=1
-		repeat
-			local name = '(noBakDoor-Auto) Cannot play '..autosonglist[index].Name.. '.'
-			local id = autosonglist[index].Id
-			pcall(function() 
-				if mp:GetProductInfo(id).AssetTypeId==3 then 
-					name = '(noBakDoor-Auto) Now Playing '..autosonglist[index].Name
-				end 
-			end)
-			if name:sub(1,3)=="Can" then
-				server.Hint(name..' ('..id..')',service.Players:children()) 
-				wait(6)
-			else
-				if autosonglist[index].Time==nil or tonumber(autosonglist[index].Time)==nil then
-					server.Hint('(noBakDoor-Auto) '..name..' has no time frame. ('..id..')',service.Players:children()) 
-					wait(6)
-				else
-					if autosonglist[index+1].Time~=nil then
-						server.Remote(plr,'Function','PreloadAssetId',autosonglist[index+1].Id,service.Players:children())
-					end
-					if autosonglist[index+2].Time~=nil then
-						server.Remote(plr,'Function','PreloadAssetId',autosonglist[index+2].Id,service.Players:children())
-					end
-					local soundlength=tonumber(autosonglist[index].Time)
-					local s = Instance.new("Sound") 
-					s.Name='Sound'..server.RemoteObject
-					s.Parent=service.Workspace
-					s.SoundId = "rbxassetid://" .. id 
-					s.Volume = volume 
-					s.Pitch = pitch 
-					s.Looped = true 
-					s.archivable = false
-					cPcall(function() s:Play() end)
-					local starttick=tick()
-					local aboutnext=false
-					server.autoMusicSkipSong=false 
-					server.autoSongInfo=name..' ('..id..')-'..soundlength..'-'
-					server.Hint(server.autoSongInfo,service.Players:children(),15) 
-					while tick()-starttick<soundlength and server.autoMusicRunning==true and server.autoMusicSkipSong==false do
-						if aboutnext==false and tick()-starttick>soundlength-10 then
-							local songname
-							aboutnext=true
-							if autosonglist[index+1]==nil then
-								server.Hint('(noBakDoor-Auto) Song list will soon rescramble.',service.Players:children(),6) 
-							else
-								local index=index+1
-								local id=autosonglist[index].Id
-								server.Hint('(noBakDoor-Auto) '..autosonglist[index].Name.."("..id..") coming up next..",service.Players:children(),9.4) 
-							end 
-						end
-						server.autoSongInfo=name..' ('..id..')-'..soundlength..'-[left:'..soundlength-(tick()-starttick)..']'
-						wait(.5)
-					end
-					index=index+1
-					server.autoMusicSkipSong=false
-					cPcall(function() s.Volume=0 s:Stop() s:Destroy() end)
-				end 
-			end 
-			if index>=#autosonglist then
-				index=1
-				shuffleTable(autosonglist)
-			end
-		until server.autoMusicRunning==false
-		server.autoMusicStop=nil
-		server.autoMusicSkipSong=nil
-		server.autoSongInfo=nil
-	end)
-	
-	server.MakeCommand('Get the current song that AutoMusic is playing.',2,server.Prefix,{'autostatus','autoinfo'},{},function(plr,args)
-		if server.autoMusicSkipSong==nil then
-			server.Hint('(noBakDoor-Auto) is not running..',{plr}) 
-		else
-			server.Hint(server.autoSongInfo,{plr}) 
-		end 
-	end)	
-	
-	server.MakeCommand('Skip the song when AutoMusic is running.',2,server.Prefix,{'autoskip'},{},function(plr,args)
-		if server.autoMusicSkipSong~=nil then
-			server.autoMusicSkipSong=true
-		else
-			server.Hint("(noBakDoor-Auto) Can't skip, automusic is not running..",{plr}) 
-		end 
-	end)
-	
-	server.MakeCommand('Stop the currently playing song',2,server.Prefix,{'musicstop','stopmusic','musicoff','autostop'},{},function(plr,args)
-		for i, v in pairs(game.Workspace:children()) do 
-			if v.Name=='Sound'..server.RemoteObject then 
-				v:Destroy() 
-			end 
-		end
-		if server.autoMusicRunning~=nil and server.autoMusicRunning==true then
-			server.autoMusicRunning=false
-		end
+	server.MakeCommand('Stop the currently playing song',2,server.Prefix,{'stopmusic','musicoff'},{},function(plr,args)
+		for i, v in pairs(game.Workspace:children()) do if v.Name=='Sound'..server.RemoteObject then v:Destroy() end end
 	end)
 	
 	server.MakeCommand('Shows you the script\'s available music list',2,server.Prefix,{'musiclist','listmusic','songs'},{},function(plr,args)
@@ -5375,14 +5367,6 @@ server.LoadCommands = function()
 			table.insert(listforclient,{Object=v.Name,Desc=v.Id})
 		end
 		server.Remote(plr,'Function','ListGui','Music List',listforclient)
-	end)
-	
-	server.MakeCommand('Shows you the current Trello available music list',2,server.Prefix,{'tmusiclist','trellomusiclist','tlistmusic','trelolistmusic','tsongs','trellosongs'},{},function(plr,args)
-		local listforclient={}
-		for i, v in pairs(server.TRELLOmusl) do 
-			table.insert(listforclient,{Object=v.Name,Desc=v.Id})
-		end
-		server.Remote(plr,'Function','ListGui','Trello Music List',listforclient)
 	end)
 	
 	server.MakeCommand('Turns the target player(s) into a stick figure',-1,server.Prefix,{'stickify','stick','stickman'},{'player'},function(plr,args)
@@ -5527,9 +5511,9 @@ server.LoadCommands = function()
 			local lleg=v.Character['Left Leg']
 			local rleg=v.Character['Right Leg']
 			local head=v.Character['Head']
-			if torso and larm and rarm and lleg and rleg and head and not v.Character:FindFirstChild(v.Name..'nBDcrusify') then
+			if torso and larm and rarm and lleg and rleg and head and not v.Character:FindFirstChild(v.Name..'epixcrusify') then
 				local cru=Instance.new('Model',v.Character)
-				cru.Name=v.Name..'nBDcrusify'
+				cru.Name=v.Name..'epixcrusify'
 				local c1=Instance.new('Part',cru)
 				c1.BrickColor=BrickColor.new('Reddish brown')
 				c1.Material='Wood'
@@ -5680,17 +5664,140 @@ server.LoadCommands = function()
 	server.MakeCommand('Turns the target into the one and only D O Double G.',-1,server.Prefix,{'dogg','snoop','snoopify','dodoubleg'},{'player'},function(plr,args)
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
 			cPcall(function()
-				if v.Character.HumanoidRootPart:FindFirstChild("Snoop") then return end
+				for k,p in pairs(v.Character.HumanoidRootPart:children()) do if p:IsA("Mesh") or p:IsA("Decal") or p:IsA("Sound") then p:Destroy() end end
+				server.RunCommand(server.Prefix.."removehats",v.Name)
 				server.RunCommand(server.Prefix.."invisible",v.Name)
+				v.Character.Head.Transparency=0.9
+				v.Character.Head.Mesh.Scale=Vector3.new(0.01,0.01,0.01)
 				local mesh=Instance.new("BlockMesh",v.Character.HumanoidRootPart)
 				mesh.Scale=Vector3.new(2,3,0.1)
 				local decal1=Instance.new("Decal")
 				decal1.Face="Back"
 				decal1.Texture="http://www.roblox.com/asset/?id=131396137"
 				decal1.Name="Snoop"
-				local snoop=deps.Snoopinator:clone()
-				snoop.Parent=decal1
-				snoop.Disabled=false
+				--local snoop=deps.Snoopinator:clone()
+				--snoop.Parent=decal1
+				--snoop.Disabled=false
+				local cl=server.LoadScript('Script',[[while true do 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395838"
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395847" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395855" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395860" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395868" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395884" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395884" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395891" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395897" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395901" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395946" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395957" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395966" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395972" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395979" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395986" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395989" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395993" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131395997" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396003" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396007" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396012" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396016" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396019" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396024"
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396029"
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396037" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396042" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396044" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396046" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396054"
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396063" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396068" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396072" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396078"  
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396091"
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396098" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396102" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396108" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396110"
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396113" 
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396116" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396121" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396125" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396133"
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396137"
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396142" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396146" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396156" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396162" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396164"
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396169" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396173" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396176" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396181" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396185" 
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396188" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=131396192" 
+					wait(0.05)
+				end]])
+				cl.Parent=decal1
+				cl.Disabled=false
 				local decal2=decal1:clone()
 				decal2.Face="Front"
 				decal1.Parent=v.Character.HumanoidRootPart
@@ -5703,20 +5810,40 @@ server.LoadCommands = function()
 		end
 	end)
 	
-	server.MakeCommand('Sends chivers down ur spine',-1,server.Prefix,{'sp00ky','spooky','spookyscaryskeleton'},{'player'},function(plr,args)
+	server.MakeCommand('Sends shivers down ur spine',-1,server.Prefix,{'sp00ky','spooky','spookyscaryskeleton'},{'player'},function(plr,args)
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
 			cPcall(function()
-				if v.Character.HumanoidRootPart:FindFirstChild("Snoop") then return end
+				for k,p in pairs(v.Character.HumanoidRootPart:children()) do if p:IsA("Mesh") or p:IsA("Decal") or p:IsA("Sound") then p:Destroy() end end
+				server.RunCommand(server.Prefix.."removehats",v.Name)
 				server.RunCommand(server.Prefix.."invisible",v.Name)
+				v.Character.Head.Transparency=0.9
+				v.Character.Head.Mesh.Scale=Vector3.new(0.01,0.01,0.01)
 				local mesh=Instance.new("BlockMesh",v.Character.HumanoidRootPart)
 				mesh.Scale=Vector3.new(2,3,0.1)
 				local decal1=Instance.new("Decal")
 				decal1.Face="Back"
 				decal1.Texture="http://www.roblox.com/asset/?id=183747890"
 				decal1.Name="Sp00k"
-				local snoop=deps.Sp00kinator:clone()
-				snoop.Parent=decal1
-				snoop.Disabled=false
+				local cl=server.LoadScript('Script',[[while true do 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747849"
+					wait(0.05) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747854" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747863" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747870" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747877" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747879" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747885" 
+					wait(0.05)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=183747890"
+					wait(0.05)
+				end]])
+				cl.Parent=decal1
+				cl.Disabled=false
 				local decal2=decal1:clone()
 				decal2.Face="Front"
 				decal1.Parent=v.Character.HumanoidRootPart
@@ -5725,6 +5852,178 @@ server.LoadCommands = function()
 				sound.SoundId="rbxassetid://174270407"
 				sound.Looped=true
 				sound:Play()
+			end)
+		end
+	end)
+	
+	server.MakeCommand('2 cute 4 u',-1,server.Prefix,{'k1tty','cut3'},{'player'},function(plr,args)
+		for i,v in pairs(server.GetPlayers(plr,args[1])) do
+			cPcall(function()
+				for k,p in pairs(v.Character.HumanoidRootPart:children()) do if p:IsA("Mesh") or p:IsA("Decal") or p:IsA("Sound") then p:Destroy() end end
+				server.RunCommand(server.Prefix.."removehats",v.Name)
+				server.RunCommand(server.Prefix.."invisible",v.Name)
+				v.Character.Head.Transparency=0.9
+				v.Character.Head.Mesh.Scale=Vector3.new(0.01,0.01,0.01)
+				local mesh=Instance.new("BlockMesh",v.Character.HumanoidRootPart)
+				mesh.Scale=Vector3.new(3.5,3.5,0.1)
+				local decal1=Instance.new("Decal")
+				decal1.Face="Back"
+				decal1.Texture="http://www.roblox.com/asset/?id=280224764"
+				decal1.Name="K1tty"
+				local cl=server.LoadScript('Script',[[while true do
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224764"
+					wait(0.1) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224790" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224800" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224820" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224830" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224844" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224861" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224899" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224924" 
+					wait(0.1)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=280224955" 
+					wait(0.1)
+				end]])
+				cl.Parent=decal1
+				cl.Disabled=false
+				local decal2=decal1:clone()
+				decal2.Face="Front"
+				decal1.Parent=v.Character.HumanoidRootPart
+				decal2.Parent=v.Character.HumanoidRootPart
+				local sound=Instance.new("Sound",v.Character.HumanoidRootPart)
+				sound.SoundId="rbxassetid://179393562"
+				sound.Looped=true
+				sound:Play()
+			end)
+		end
+	end)
+	
+	server.MakeCommand('MLG fr0g',-1,server.Prefix,{'fr0g','fr0ggy','mlgfr0g','mlgfrog'},{'player'},function(plr,args)
+		for i,v in pairs(server.GetPlayers(plr,args[1])) do
+			cPcall(function()
+				for k,p in pairs(v.Character.HumanoidRootPart:children()) do if p:IsA("Mesh") or p:IsA("Decal") or p:IsA("Sound") then p:Destroy() end end
+				server.RunCommand(server.Prefix.."removehats",v.Name)
+				server.RunCommand(server.Prefix.."invisible",v.Name)
+				v.Character.Head.Transparency=0.9
+				v.Character.Head.Mesh.Scale=Vector3.new(0.01,0.01,0.01)
+				local mesh=Instance.new("BlockMesh",v.Character.HumanoidRootPart)
+				mesh.Scale=Vector3.new(3,3,0.1)
+				local decal1=Instance.new("Decal")
+				decal1.Face="Back"
+				decal1.Texture="http://www.roblox.com/asset/?id=185945467"
+				decal1.Name="Fr0g"
+				local cl=server.LoadScript('Script',[[while true do
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945467"
+					wait(0.000001) 
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945486" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945493" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945515" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945527" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945553" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945573" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945588" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945612" 
+					wait(0.000001)
+					script.Parent.Texture = "http://www.roblox.com/asset/?id=185945634" 
+					wait(0.000001)
+				end]])
+				cl.Parent=decal1
+				cl.Disabled=false
+				local decal2=decal1:clone()
+				decal2.Face="Front"
+				decal1.Parent=v.Character.HumanoidRootPart
+				decal2.Parent=v.Character.HumanoidRootPart
+				local sound=Instance.new("Sound",v.Character.HumanoidRootPart)
+				sound.SoundId="rbxassetid://149690685"
+				sound.Looped=true
+				sound:Play()
+			end)
+		end
+	end)
+	
+	server.MakeCommand('Shia LaB00f',-1,server.Prefix,{'sh1a','lab00f','sh1alab00f'},{'player'},function(plr,args)
+		for i,v in pairs(server.GetPlayers(plr,args[1])) do
+			cPcall(function()
+				for k,p in pairs(v.Character.HumanoidRootPart:children()) do if p:IsA("Mesh") or p:IsA("Decal") or p:IsA("Sound") then p:Destroy() end end
+				server.RunCommand(server.Prefix.."removehats",v.Name)
+				server.RunCommand(server.Prefix.."invisible",v.Name)
+				v.Character.Head.Transparency=0.9
+				v.Character.Head.Mesh.Scale=Vector3.new(0.01,0.01,0.01)
+				local mesh=Instance.new("BlockMesh",v.Character.HumanoidRootPart)
+				mesh.Scale=Vector3.new(3,3,0.1)
+				local decal1=Instance.new("Decal")
+				decal1.Face="Back"
+				decal1.Texture="http://www.roblox.com/asset/?id=286117283"
+				decal1.Name="LaB00f"
+				local cl=server.LoadScript('Script',[[while true do
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286117283"
+						wait(0.1) 
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286117453"
+						wait(0.1) 
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286117512"
+						wait(0.1) 
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286117584"
+						wait(0.1) 
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118200"
+						wait(0.1) 
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118256"
+						wait(0.1) 
+						--script.Parent.Texture = "http://www.roblox.com/asset/?id=286118366" --Borked frame
+						--wait(0.1) 
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118468"
+						wait(0.1) 
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118598"
+						wait(0.1)
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118637"
+						wait(0.1)
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118670"
+						wait(0.1)
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118709"
+						wait(0.1)
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118755"
+						wait(0.1)
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118810"
+						wait(0.1)
+						script.Parent.Texture = "http://www.roblox.com/asset/?id=286118862"
+						wait(0.1)
+					end]])
+				cl.Parent=decal1
+				cl.Disabled=false
+				local decal2=decal1:clone()
+				decal2.Face="Front"
+				decal1.Parent=v.Character.HumanoidRootPart
+				decal2.Parent=v.Character.HumanoidRootPart
+				local sound=Instance.new("Sound",v.Character.HumanoidRootPart)
+				sound.SoundId="rbxassetid://259702986"
+				sound.Looped=true
+				sound:Play()
+			end)
+		end
+	end)
+	
+	server.MakeCommand("Removes particle emitters from target",-1,server.Prefix,{"unparticle","removeparticles"},{"player"},function(plr,args)
+		for i,v in pairs(server.GetPlayers(plr,args[1])) do
+			cPcall(function()
+				for k,p in pairs(v.Character.Torso:children()) do
+					if p:IsA("ParticleEmitter") then
+						p:Destroy()
+					end
+				end
 			end)
 		end
 	end)
@@ -5741,7 +6040,7 @@ server.LoadCommands = function()
 				part.Lifetime=NumberRange.new(5) 
 				part.Speed=NumberRange.new(.5,1) 
 				part.Rotation=NumberRange.new(0,359) 
-				part.RotSpeed=NumberRange.new(-90,90) 
+				part.RotSpeed=NumberRange.new(-90,90) --thanks go 2 kohl
 				part.Rate=11 
 				part.VelocitySpread=180	
 				if args[3] then
@@ -5749,7 +6048,7 @@ server.LoadCommands = function()
 						table.insert(startColor,tonumber(s))
 					end
 				end
-				if args[4] then--276138620
+				if args[4] then--276138620 :)
 					for s in args[4]:gmatch("[%d]+")do
 						table.insert(endColor,tonumber(s))
 					end
@@ -5796,7 +6095,7 @@ server.LoadCommands = function()
 					if m:IsA("CharacterMesh") or m:IsA("Hat") then
 						m:Destroy()
 					end
-				end --Checked for noBakDoor
+				end
 				service.InsertService:LoadAsset(36781518):children()[1].Parent=v.Character
 				service.InsertService:LoadAsset(36781481):children()[1].Parent=v.Character
 				service.InsertService:LoadAsset(36781407):children()[1].Parent=v.Character
@@ -5874,23 +6173,9 @@ server.LoadCommands = function()
 		args[2]=tonumber(args[2])
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
 		 if not (v and v.Character and v.Character:findFirstChild('Torso') and v.Character:findFirstChild('HumanoidRootPart')) then return end
-			local resizee=require(deps.ScalingCharacter)
-			local char=resizee.new(v.Character)
-			char:Resize(args[2])
-			server.Remote(v,'Function','SetResizeCameraHeight')
-			local cape=v.Character:findFirstChild("nBDCape")
-			if cape then cape:Destroy() end
-		end
-	end)	
-	
-	server.MakeCommand('Resize the target player(s)\'s character by <number>',-1,server.Prefix,{'oldresize','oldsize'},{'player','number'},function(plr,args)
-		if tonumber(args[2])>50 then args[2]=50 end
-		args[2]=tonumber(args[2])
-		for i,v in pairs(server.GetPlayers(plr,args[1])) do
-		 if not (v and v.Character and v.Character:findFirstChild('Torso') and v.Character:findFirstChild('HumanoidRootPart')) then return end
 			local ags = {c = v.Character, t = v.Character.Torso, r = v.Character.HumanoidRootPart}
 			ags.t.Anchored = true ags.t.BottomSurface = 0 ags.t.TopSurface = 0
-			local welds = {} 
+			local welds = {} --Credit to Drezmor for the orig command, credit to Kohltastrophe for helping me make it work correctly l0l
 			for i2,v2 in pairs(ags.c:children()) do
 			if v2:IsA('BasePart') then 
 				v2.Anchored = true
@@ -5932,10 +6217,10 @@ server.LoadCommands = function()
 			for i2,v2 in pairs(welds) do v2.Part0 = ags.t v2.Part1.Anchored = false end
 			for i2,v2 in pairs(ags.c:children()) do if v2:IsA('BasePart') then v2.Anchored = false end end
 			local weld = Instance.new('Weld',ags.r) weld.Part0 = ags.r weld.Part1 = ags.t
-			local cape=ags.c:findFirstChild("nBDCape")
+			local cape=ags.c:findFirstChild("Epix_Cape")
 			if cape then
 				cape.Size=cape.Size*args[2]
-				server.Remote(v,'Function','MoveCape',cape)
+			--	server.Remote(v,'Function','MoveCape',cape)
 			end
 		end
 	end)
@@ -6333,7 +6618,7 @@ server.LoadCommands = function()
 	v.Character.Torso["Right Hip"].C0 = CFrame.new(1,-1,0) * CFrame.Angles(0,math.rad(90),0)
 	v.Character.Torso["Left Hip"].C0 = CFrame.new(-1,-1,0) * CFrame.Angles(0,math.rad(-90),0)
 	local parent=v:FindFirstChild('PlayerGui') or v:FindFirstChild('Backpack')
-	for a, sc in pairs(parent:children()) do if sc.Name == server.CodeName.."ify" or sc.Name==server.CodeName..'Glitch' or sc.Name == server.CodeName.."nBDPoison" then sc:Destroy() end end
+	for a, sc in pairs(parent:children()) do if sc.Name == server.CodeName.."ify" or sc.Name==server.CodeName..'Glitch' or sc.Name == server.CodeName.."EpixPoison" then sc:Destroy() end end
 	for a, prt in pairs(v.Character:children()) do
 	if prt:IsA("BasePart") and (prt.Name ~= "Head" or not prt.Parent:findFirstChild("NameTag", true)) then 
 	prt.Transparency = 0 prt.Reflectance = 0 prt.BrickColor = BrickColor.new("White")
@@ -6341,9 +6626,9 @@ server.LoadCommands = function()
 	if prt.Name == 'HumanoidRootPart' then prt.Transparency=1 end
 	elseif prt:findFirstChild("NameTag") then 
 		prt.Head.Transparency = 0 prt.Head.Reflectance = 0 prt.Head.BrickColor = BrickColor.new("White")
-	elseif prt.Name=='nBD Puke' or prt.Name=='nBD Bleed' then
+	elseif prt.Name=='Epix Puke' or prt.Name=='Epix Bleed' then
 		prt:Destroy()
-	elseif prt.Name==v.Name..'nBDcrusify' then
+	elseif prt.Name==v.Name..'epixcrusify' then
 		server.RunCommand(server.Prefix..'refresh',v.Name)
 	end 
 	end
@@ -6421,12 +6706,126 @@ server.LoadCommands = function()
 	end)
 	
 	server.MakeCommand('View and change settings',5,server.Prefix,{'settings'},{},function(plr,args)
-		for i,v in pairs(UpdatableSettings) do
-			if server[v]~=nil then server.Remote(plr,'SetSetting',v,server[v]) end
-		end
-		server.Remote(plr,'SetSetting','UpdatableSettings',UpdatableSettings)
-		wait(0.5)
-		server.Remote(plr,'Function','Settings')
+		local settings={}
+		local descs={
+			['LoaderID'] = "ID to use for updating this script (the MainModule loader)";
+			['MainModuleID'] = "MainModule that gets loaded by the loader script";
+			['SettingsToIgnore'] = "Place settings to ignore";
+			['CreatorDebugPowers'] = "When true gives Sceleratis place owner powers in your game (for debugging)";
+			['Trello'] = "Pulls Bans/Admins from a Trello board";
+			['BoardID'] = "The Trello board ID";
+			['HttpWait'] = "How often (in seconds) should the Trello list(s) update? (10+)";
+			['Owners'] = "Edit the list of Owner Admins";
+			['Admins'] = "Edit the list of Admins";
+			['Mods'] = "Edit the list of Mods";
+			['Prefix'] = "This comes before each command (e.g. :kill darkelementallord)";
+			['AnyPrefix'] = "This comes before each player command (!rejoin etc.)";
+			['SpecialPrefix'] = "Prefix to use with special functions (!all, !nonadmins etc.)";
+			['SplitKey'] = "This is what seperates command arguments";	
+			['BatchKey'] = "This seperates multiple commands (:tp scel me | :explode dark)";
+			['ConsoleKey'] = "The key which will open the command console";
+			['CustomKeyBinds'] = "Allow players to set their own keybinds";
+			['CustomChat'] = "The Custom chat system";
+			['AntiCustomChatSpam'] = "Will stop a player from spamming the chat very easily";
+			['CustomChatType'] = "Classic/Bubble/Both - Similar to ROBLOX's chat system";
+			['SeperatedChannels'] = "Determines whether the custom chat modes can see eachother";
+			['CustomPlayerList'] = "A simplistic varient of the Playerlist";
+			['BetterTopbar'] = "Allows minor editting to the ROBLOX Topbar";
+			['BetterTopbarMatchAdmin'] = "Will make the Topbar match the admin GUI settings";
+			['BetterTopbarColor'] = "Will determine the color of the BetterTopbar";
+			['BetterTopbarTransparency'] = "Sets the transparency of the ROBLOX Topbar";
+			['BetterTopbarText'] = "Will display this text on the ROBLOX Topbar";
+			['MaxNumberOfLogs'] = "How many logs to keep until the oldest entries are removed";
+			['Console'] = "If players can use the command Console";
+			['AutoUpdate'] = "If the script will automatically update itself";
+			['FunCommands'] = "Allows admins to use commands such as ':explode'";
+			['PermBanKey'] = "Key (random string) to use in persistent perm ban";
+			['BuggedCommandMatching'] = "Set to true if you want to use the old buggy string matching (e.g. 'Hello there :kill me')";
+			['CommandConfirmation'] = "Will tell the player if a command ran successfully";
+			['CommandPermissions'] = "Will show a table of the custom command permissions";
+			['NotificationSound'] = "The ID of the sound file which will play when you get a notification";
+			['Capes'] = "Will display a table showing a list of capes";
+			['SystemMessageTitle'] = "The text that will be displayed at the top of a System Message (:sm ...)";
+			['OwnersAreTrueOwners'] = "If Owner Admins get Place Owner privellages";
+			['SongMessage'] = "A message will be displayed when a player uses the ':music' command";
+			['JumpOnTeleport'] = "If a player will jump before teleporting (to avoid problems with seats)";
+			['PlayerCommands'] = "If anyone can use commands like '!rejoin', '!ping' etc.";
+			['PMUsableByAnyone'] = "If everyone can use the ':pm' command";
+			['FreeAdmin'] = "If everyone gets admin";
+			['FreeAdminType'] = "(Mod/Admin/Owner) What type of admin people get with 'FreeAdmin'";
+			['VipAdmin'] = "If someone can have admin for owning an item";
+			['VipItems'] = "A table of items which will give people VipAdmin";
+			['FriendAdmin'] = "Will give admin to everyone in the place owner's friend list";
+			['FriendAdminType'] = "(Mod/Admin/Owner) What type of admin people get with 'FriendAdmin'";
+			['HelpSystem'] = "Enable the help system?";
+			['JoinMessage'] = "Will display a message every time someone joins the server";
+			['AutoClean'] = "AutoClean the server? (!clean)";
+			['AutoCleanDelay'] = "Time between AutoCleans";
+			['MusicList'] = "A table showing the preset music lists";
+			['MessageOfTheDay'] = "Detnermines if the Message of the day is shown to the admins when they join";
+			['MessageOfTheDayID'] = "ID of the model/decal to grab the message from";
+			['VoteKick'] = "Allow vote kicking";
+			['VoteKickPercentage'] = "Percentage of in-game votes to kick someone";
+			['DisplayAdvertisements'] = "Lets you show small advertisements in the help GUI";
+			['Advertisements'] = "A table of custom adverts which you have set up";
+			['DonorPerks'] = "If Donors can use the DonorPerk commands/items";
+			['DonorItem'] = "Set to 0 to disable donor gear item, Default is bongos";
+			['ExclusionList'] = "A table of people who are excluded from the anti-exploit";
+			['ExploitAlert'] = "Will alert admins if someone is removed for exploiting";
+			['AntiChatCode'] = "Will kick players if they chat code";
+			['Detection'] = "Will attempt to detect certain exploits";
+			['AntiRobloxLocked'] = "Disconnects a player if they become RobloxLocked";
+			['AntiSpeed'] = "Will attempt to stop speed 'hackers'";
+			['AntiSelection'] = "Will remove a player if their selection changes (if they are using studio tools)";
+			['AntiNil'] = "Will disconnect a player if they go 'nil'";
+			['AntiCheatEngine'] = "Will disconnect players who have 'Cheat Engine' installed on their computers";
+			['AntiScriptsDisabled'] = "Will disconnect players if their client refuses to load in time";
+			['AntiAnimation'] = "Will prevent the animation exploit";
+			['AntiNameIdChange'] = "Attempts to stop players from locally changing their name/id to fool local scripts";
+			['AntiGod'] = "Will prevent non-admins from becoming godded";
+			['AntiLeak'] = "Will attempt to stop some place-stealing exploits (DO NOT USE IN PERSONAL SERVERS)";
+			['RenameGameObjects'] = "Will rename core services to fool some exploits (THIS CAN BREAK SOME SCRIPTS)";
+			['NerfExplosions'] = "Will nerf any explosions (nillifying their damage)";
+			['AntiDelete'] = "Will prevent players from deleting items in the workspace (MAY LAG YOUR GAME)";
+			['AntiUnAnchor'] = "Will attempt to prevent players from unanchoring the workspace (MAY LAG YOUR GAME)";
+			['AntiDecals'] = "Will prevent decals from being inserted into your game";
+			['AntiSound'] = "Will prevent non-admin sound files from being inserted into your game";
+			['WordList'] = "A table of banned words which, if said, will kick the player";
+			['AntiBuildingTools'] = "Will prevent non-admins from using building tools";
+			['AntiTools'] = "Will remove any tools a player has which were not present at the start of the server";
+			['AllowedToolsList'] = "A table of exceptions for the 'AntiTools'";
+			['AntiGui'] = "Prevents non-game/admin guis from being spawned on players";
+			['AllowedGuiList'] = "A table of exceptions for the 'AntiGui'";
+			['GroupOnlyJoin'] = "If the place is locked to anyone but admins and people in the group 'GroupId'";
+			['GroupId'] = "Id of group, used for info/join message";
+			['Groups'] = "A table of ranks and groups which are Mod/Admin/Owner/Banned";
+			['AdminsSpawnWithGuis'] = "This determines if admins spawn with the admin chat and cmd box";
+			['HelpGui'] = "This determines if players spawn with the helpgui or not";
+			['Font'] = "The font of the Guis (Arial/ArialBold/SourceSans/SourceSansBold/Legacy";
+			['TextStrokeTransparency'] = "The transparency of the text outline";
+			['Transparency'] = "The general transparency of the Guis";
+			['Animations'] = "If the Guis slide out of the side of the screen, or if they appear";
+			['MessageAnimations'] = "If the ':m' message slides out from the top, or just appears";
+			['HelpGuiYPosScale'] = "Determines the Y Position of the help gui button";
+			['HelpGuiXPosScale'] = "Determines the X Position of the help gui button"
+		}
+		local NotUpdatable={
+			'PlaceOwners'; 
+			'DataStoreKey';
+			'ChangedSettingsStick';
+			'Storage';
+			'Ranks';
+			'MusicList';
+			'Capes'; --Certain settings are not supported by the settings gui yet
+			'LoaderId';
+			'MainModuleId';
+			'OwnersAreTrueOwners';
+			'CreatorDebugPowers';
+			'CommandPermissions';
+		}
+		for i,v in pairs(UpdatableSettings) do if server[v]~=nil then settings[v]=server[v] end end
+		for i,v in pairs(NotUpdatable) do settings[v]=nil end
+		server.Remote(plr,'Function','Settings',settings,descs)
 	end)
 	
 	server.MakeCommand('Change command permissions',5,server.Prefix,{'perms','permissions','comperms'},{server.Prefix..'cmd','all/donor/temp/admin/owner/creator'},function(plr,args)
@@ -6503,9 +6902,77 @@ server.LoadCommands = function()
 			p.Anchored=true
 			p.CanCollide=false
 			p.Archivable=false
-			local tornado=deps.Tornado:clone()
-			tornado.Parent=p
-			tornado.Disabled=false
+			--local tornado=deps.Tornado:clone()
+			--tornado.Parent=p
+			--tornado.Disabled=false
+			local cl=server.LoadScript('Script',[[
+				local Pcall=function(func,...) local function cour(...) coroutine.resume(coroutine.create(func),...) end local ran,error=ypcall(cour,...) if error then print('Error: '..error) end end
+				local parts = {}
+				local main=script.Parent
+				main.Anchored=true
+				main.CanCollide=false
+				main.Transparency=1
+				local smoke=Instance.new("Smoke",main)
+				local sound=Instance.new("Sound",main)
+				smoke.RiseVelocity=25
+				smoke.Size=25
+				smoke.Color=Color3.new(170/255,85/255,0)
+				smoke.Opacity=1
+				sound.SoundId="rbxassetid://142840797"
+				sound.Looped=true
+				sound:Play()
+				sound.Volume=1
+				sound.Pitch=0.8
+				local light=Instance
+				
+				function fling(part)
+					part:BreakJoints()
+					part.Anchored=false
+					local pos=Instance.new("BodyPosition",part)
+					pos.maxForce = Vector3.new(math.huge,math.huge,math.huge)--10000, 10000, 10000)
+					pos.position = part.Position
+					local i=1
+					local run=true
+					while main and wait() and run do
+						if part.Position.Y>=main.Position.Y+50 then
+							run=false
+						end
+						pos.position=Vector3.new(50*math.cos(i),part.Position.Y+5,50*math.sin(i))+main.Position
+						i=i+1
+					end
+					pos.maxForce = Vector3.new(500, 500, 500)
+					pos.position=Vector3.new(main.Position.X+math.random(-100,100),main.Position.Y+100,main.Position.Z+math.random(-100,100))
+					pos:Destroy()
+				end
+				
+				function get(obj)
+					if obj ~= main and obj:IsA("Part") then
+						table.insert(parts, 1, obj)
+					elseif obj:IsA("Model") or obj:IsA("Hat") or obj:IsA("Tool") or obj == workspace then
+						for i,v in pairs(obj:children()) do
+							Pcall(get,v)
+						end
+						obj.ChildAdded:connect(function(p)Pcall(get,p)end)
+					end
+				end
+				
+				get(workspace)
+				
+				repeat
+					Pcall(function()
+					for i,v in pairs(parts) do
+						if (((main.Position - v.Position).magnitude * 250 * 20) < (5000 * 40)) and v and v:IsDescendantOf(workspace) then
+							Pcall(fling,v)
+						elseif not v or not v:IsDescendantOf(workspace) then
+							table.remove(parts,i)
+						end
+					end
+					end)
+					main.CFrame = main.CFrame + Vector3.new(math.random(-3,3), 0, math.random(-3,3))
+					wait()
+			until main.Parent~=workspace or not main]])
+			cl.Parent=p
+			cl.Disabled=false
 			if args[2] and tonumber(args[2]) then
 				for i=1,tonumber(args[2]) do
 					if not p or not p.Parent then
@@ -6572,10 +7039,15 @@ server.LoadCommands = function()
 		server.Remote(plr,"Function","ListGui","Errors",tab)
 	end)
 	
-	server.MakeCommand('View server log',5,":",{'serverlog','serverlogs','serveroutput'},{'messagetype/all'},function(plr,args)
+	server.MakeCommand('TEST ERROR',2,server.Prefix,{"error"},{},function(plr,args)
+		server.Remote(plr,"TestError")
+		error("TEST ERROR")
+	end)
+	
+	server.MakeCommand('View server log',2,":",{'serverlog','serverlogs','serveroutput'},{'messagetype/all'},function(plr,args)
 		local temp={}
 		for i,v in pairs(game.LogService:GetLogHistory()) do
-			if (args[1] and args[1]:lower()=='script') and v.message:find('nBD') then
+			if (args[1] and args[1]:lower()=='script') and v.message:find('Epix') then
 				if v.messageType==Enum.MessageType.MessageOutput then
 					table.insert(temp,{Object=v.message,Desc='Output: '..v.message})
 				elseif v.messageType==Enum.MessageType.MessageWarning then
@@ -6603,7 +7075,7 @@ server.LoadCommands = function()
 		server.Remote(plr,'Function','ListGui','Server Log',temp,'serverlogstuff-'..(args[1] or 'all'),1300)
 	end)
 	
-	server.MakeCommand('View the admin logs for the server',3,server.Prefix,{'logs','log','commandlogs'},{},function(plr,args)
+	server.MakeCommand('View the admin logs for the server',2,server.Prefix,{'logs','log','commandlogs'},{},function(plr,args)
 		local temp={}
 		for i,m in pairs(server.PlayerLogs.Admin) do
 			table.insert(temp,{Object='['..m.Time..'] '..m.Name..': '..m.Log,Desc=m.Log})
@@ -6640,27 +7112,21 @@ server.LoadCommands = function()
 		server.Remote(plr,'Function','ListGui','Exploit Logs',temp,'exploitlogs')
 	end)
 	
-	server.MakeCommand('Uses einsteinK\'s LoadstringParser & LBI. Lets you run code on the server',3,server.Prefix,{'s','scr','script'},{'code'},function(plr,args)
-		--if server.canuseloadstring then
-			server.Output(args[1], plr)
-			--server.LoadScript('Loadstring',args[1],server.AssignName(),true,server.ServerScriptService)
-		--else 
-			--server.Hint('LoadStringEnabled is set to false! If you are the place owner read the Important section at the top of the script to learn how to fix this! Attempting to run using LoadstringParser.',{plr})
-			server.LoadScript('Script',args[1],server.AssignName(),true,server.ServerScriptService)	
-		--end
+	server.MakeCommand('Lets you run code on the server',3,server.Prefix,{'s','scr','script'},{'code'},function(plr,args)
+		server.Output(args[1], plr)
+		local cl=server.LoadScript('Script',args[1])
+		cl.Name=server.AssignName()
+		cl.Parent=service.ServerScriptService
+		cl.Disabled=false	
 	end)
 	
-	server.MakeCommand('Uses einsteinK\'s LoadstringParser & LBI. . Very limited. No apparent ROBLOX stuff. Lets you run code as a local script',3,server.Prefix,{'ls','lscr','localscript'},{'code'},function(plr,args)
-		--if not server.canuseloadstring then server.Hint('[Currently no longer works] Loadstrings are disabled, output will not be shown',{plr}) return end
+	server.MakeCommand('Lets you run code as a local script',3,server.Prefix,{'ls','lscr','localscript'},{'code'},function(plr,args)
 		server.LoadOnClient(plr,args[1],true,server.AssignName())
-		--server.Output(args[1], plr)
 	end)
 	
-	server.MakeCommand('Uses einsteinK\'s LoadstringParser & LBI. . Very limited. No apparent ROBLOX stuff. Lets you run local scripts on the target player(s)',3,server.Prefix,{'cs','cscr','clientscript'},{'player','code'},function(plr,args)
+	server.MakeCommand('Lets you run local scripts on the target player(s)',3,server.Prefix,{'cs','cscr','clientscript'},{'player','code'},function(plr,args)
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
-			--if not server.canuseloadstring then server.Hint('[Currently no longer works] Loadstrings are disabled, output will not be shown',{plr}) return end
 			server.LoadOnClient(v,args[2],true,server.AssignName())
-			--server.Output(args[2], plr)
 		end
 	end)
 	
@@ -6841,12 +7307,12 @@ server.LoadCommands = function()
 	end
 	end)
 	
-	server.MakeCommand('Same as message but says nBD message instead of your name, or whatever nBD message title is server to...',3,server.Prefix,{'sm','systemmessage'},{'message'},function(plr,args)
+	server.MakeCommand('Same as message but says SYSTEM MESSAGE instead of your name, or whatever system message title is server to...',3,server.Prefix,{'sm','systemmessage'},{'message'},function(plr,args)
 		server.Message(server.SystemMessageTitle, args[1], false, service.Players:children())
 	end)
 	
-	server.MakeCommand('Same as hint but says nBD message instead of your name, or whatever nBD message title is server to...',3,server.Prefix,{'sh','systemhint'},{'message'},function(plr,args)
-		server.Hint(server.SystemMessageTitle.. ": "..args[1],service.Players:children())
+	server.MakeCommand('Same as hint but says SYSTEM MESSAGE instead of your name, or whatever system message title is server to...',3,server.Prefix,{'sh','systemhint'},{'message'},function(plr,args)
+		server.Hint(args[1],service.Players:children())
 	end)
 	
 	server.MakeCommand("Makes a message on the target player(s) screen.",2,server.Prefix,{'mpm','messagepm'},{'player','message'},function(plr,args)
@@ -6859,11 +7325,10 @@ server.LoadCommands = function()
 	local num = 500 if num > tonumber(args[2]) then num = tonumber(args[2]) end
 	for i, v in pairs(server.GetPlayers(plr,args[1])) do
 	if server.CheckTrueOwner(plr) or not server.CheckAdmin(v, false) then
-	server.LoadScript("Script",[[
+	local cl=server.LoadScript("Script",[[
 	v=service.Players:FindFirstChild(']]..v.Name..[[')
 	for n = 1, ]]..num..[[ do
 	wait()
-	coroutine.wrap(function()
 	pcall(function()
 	if v and v.Character and v.Character:findFirstChild("Humanoid") then 
 	local val = Instance.new("ObjectValue", v.Character.Humanoid) val.Value = service.Players:FindFirstChild("]]..plr.Name..[[") val.Name = "creator"
@@ -6872,8 +7337,10 @@ server.LoadCommands = function()
 	v:LoadCharacter()
 	end
 	end)
-	end)()
-	end]],server.AssignName(),true,server.ServerScriptService)
+	end]],server.AssignName(),true,service.ServerScriptService)
+	cl.Name=server.AssignName()
+	cl.Parent=service.ServerScriptService
+	cl.Disabled=false
 	end
 	end
 	end)
@@ -6984,7 +7451,7 @@ server.LoadCommands = function()
 					if not service.Players:FindFirstChild(v.Name) then
 						server.Remote(v,'Function','KillClient')
 					else
-						v:Kick("A ingame admin kicked you from the server.")
+						v:Kick("An admin kicked you from the server.")
 					end
 				end
 			end)
@@ -7006,8 +7473,8 @@ server.LoadCommands = function()
 			time=((tonumber(time:sub(1,#time-1))*60)*60)*24
 		end
 		for i,v in pairs(server.GetPlayers(plr,args[1])) do
-			v:SaveString('nBD TimeBan_Time',tostring(tonumber(os.time())+tonumber(time)))
-			v:Kick("You are currently time banned from the game.")
+			v:SaveString('Epix TimeBan_Time',tostring(tonumber(os.time())+tonumber(time)))
+			v:Kick("You are currently banned from the game.")
 		end
 	end)
 	
@@ -7019,7 +7486,7 @@ server.LoadCommands = function()
 	if not service.Players:FindFirstChild(v.Name) then
 	server.Remote(v,'Function','KillClient')
 	else
-	if v then pcall(function() v:Kick("You have been banned from the server by a ingame admin.") end) end
+	if v then pcall(function() v:Kick("You have been banned from the server by an admin.") end) end
 	end
 	end
 	end)
@@ -7037,6 +7504,33 @@ server.LoadCommands = function()
 	end
 	end)
 	
+	--[[
+	server.MakeCommand('Reloads the scripts MainModule.',3,server.Prefix,{'reload','updateeiss','updateadmin','updatescript','reloadscript'},{},function(plr,args)
+		_G['______EISS__UPDATING__']=true
+		local message=Instance.new("Message",service.Workspace)
+		for i,v in pairs(service.Players:children()) do 
+			server.Remote(v,"UnHook") 
+		end
+		coroutine.wrap(function()
+			while _G['______EISS__UPDATING__'] and wait(0.5) do
+				message.Text="Reloading EISS. Please stand by."
+				wait(0.5)
+				message.Text="Reloading EISS. Please stand by.."
+				wait(0.5)
+				message.Text="Reloading EISS. Please stand by..."
+				wait(0.5)
+			end
+			message.Text="Reload Completed! Respawning..."
+			wait(5)
+			for i,v in pairs(service.Players:children()) do v:LoadCharacter(true) end
+			message:Destroy()
+		end)()
+		wait(5)
+		server.RemoveRemoteEvent()
+		require(script.Parent.MainModule)(server,Plugins)
+	end)
+	--]]
+	
 	server.MakeCommand('Shuts the server down',3,server.Prefix,{'shutdown'},{},function(plr,args)
 		server.Shutdown()
 	end)
@@ -7050,7 +7544,7 @@ server.LoadCommands = function()
 					server.RemoveAdmin(v,plr)
 					if server.CheckAdmin(v,false) then return end
 					table.insert(server.Mods, v.Name)
-					server.Message("nBD Message", "Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {v}) 
+					server.Message("SYSTEM MESSAGE", "You're an admin! Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {v}) 
 					server.Hint(v.Name..' Has Been Given Mod',{plr})
 				end
 			end)
@@ -7066,7 +7560,7 @@ server.LoadCommands = function()
 					server.RemoveAdmin(v,plr)
 					if server.CheckAdmin(v,false) then return end
 					table.insert(server.Admins, v.Name) 
-					server.Message("nBD Message", "Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {v}) 
+					server.Message("SYSTEM MESSAGE", "You're an admin! Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {v}) 
 					server.Hint(v.Name..' Has Been Given Admin',{plr})
 				end
 			end)
@@ -7082,7 +7576,7 @@ server.LoadCommands = function()
 					server.RemoveAdmin(v,plr)
 					if server.CheckAdmin(v,false) then return end
 					table.insert(server.Owners, v.Name)
-					server.Message("nBD Message", "Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {v})  
+					server.Message("SYSTEM MESSAGE", "You're an admin! Chat "..server['Prefix'].."cmds to view commands! The Command Prefix is "..server['Prefix'], false, {v})  
 					server.Hint(v.Name..' Has Been Given Owner Admin',{plr})
 				end
 			end)
@@ -7124,207 +7618,87 @@ server.CheckConnection=function(client)
 		end
 	end
 end
---[[
+	--[[
 --cPcall(function() while true do if server.DisplayAdvertisements then cPcall(server.UpdateAdvertisements) end wait(60) end end)
 cPcall(function() for i,v in pairs(service.Players:children()) do cPcall(server.NewPlayer,v) end end)
 --]]
-
---[[true script makers never cram the code together... You need instant pin point to fixing errors.. @Nickoplier]]--
---[[true script makers always disassemble other codes in search for.. why!?!?? @Nickoplier to '[Creator]' destroyers!]]--
-------------------------------------------------------
----start of complex manual beautifying... Nickoplier--
-------------------------------------------------------
-
-cPcall(function() 
-	service.NetworkServer.ChildAdded:connect(function(c) 
-		cPcall(server.CheckConnection,c) 
-	end) 
-end)
-cPcall(function() 
-	service.Players.PlayerAdded:connect(function(player) 
-		cPcall(server.NewPlayer,player) 
-	end) 
-end)
-cPcall(function() 
-	service.Players.PlayerRemoving:connect(function(player) 
-		cPcall(server.PlayerRemoving,player) 
-	end) 
-end)
-cPcall(function() 
-	if server.Trello and server.CheckHttp() then 
-		cPcall(function() 
-			while wait() do 
-				if server.Trello then 
-					cPcall(server.UpdateTrello) 
-				end 
-				wait(server.HttpWait or 30) 
-			end 
-		end) 
-	end 
-end)
-cPcall(function() 
-	local canuse,cantuse=pcall(function() 
-		loadstring('print("Loadstring Test")') 
-	end) 
-	if canuse then 
-		server.canuseloadstring=true 
-	end 
-end)
-cPcall(function() 
-	if server.AntiCheatEngine then 
-		for i,v in pairs(service.Workspace:children()) do 
-			if v.Name:find('nBDCEDetect') then 
-				v:Destroy() 
-			end 
-		end 
-		local part=Instance.new('Part',service.Workspace) 
-		part.Name=math.random()..'nBDCEDetect' 
-		part.Anchored=true 
-		part.Locked=true 
-		part.Archivable=false 
-		part.CanCollide=false 
-		part.Transparency=1 
-		part.FormFactor='Custom' 
-		part.Size=Vector3.new(0.2,0.2,0.2) 
-		for k=5,8 do 
-			for i=0,9 do 
-				Instance.new('Decal',part).Texture="rbxasset://../../../../../../../../Program Files (x86)/Cheat Engine "..k.."."..i.."/Cheat Engine.exe"  
-			end 
-		end 
-	end 
-end)
-cPcall(function() 
-	for i,v in pairs(server.ScriptAntiWordList) do 
-		table.insert(server.WordList,v) 
-	end 
-	for i,v in pairs(server.ScriptMusicList) do 
-		table.insert(server['MusicList'],{Name=v.n,Id=v.id}) 
-	end 
-	for i,v in pairs(server.ScriptCapeList) do 
-		table.insert(server.Capes,v) 
-	end 
-end)
-cPcall(function() 
-	if server['AntiGui'] then 
-		for i,v in pairs(game.StarterGui:children()) do 
-			v.Name=server.CodeName..v.Name 
-		end 
-	end 
-end)
-cPcall(function() 
-	if server['AntiTools'] then 
-		for i,v in pairs(game.StarterPack:children()) do 
-			if not v:FindFirstChild(server.CodeName..v.Name) then 
-				Instance.new("StringValue",v).Name=server.CodeName..v.Name 
-			end 
-		end 
-	end 
-end)
-cPcall(function() 
-	if server.Font~='Arial' and server.Font~='ArialBold' and server.Font~='Legacy' and server.Font~='SourceSans' and server.Font~='SourceSansBold' then 
-		print(server.Font..' is not a valid font! Setting font to Arial.') 
-		server.Font='Arial' 
-	end 
-end)
-cPcall(function() 
-	for i,v in pairs(service.Workspace:children()) do 
-		if v:IsA('Part') and v.Name:match('^Camera: (.*)') then 
-			table.insert(server.cameras,v) 
-		elseif v:IsA('Part') and v.Name:match('^Waypoint: (.*)') then 
-			server.Waypoints[v.Name:match('^Waypoint: (.*)')]=v.Position 
-		end 
-	end 
-end)
-cPcall(function() 
-	if server.RenameGameObjects then 
-		for i,v in pairs(game:children()) do 
-			cPcall(function() 
-				v.Name=math.random() 
-			end) 
-		end 
-	end 
-end)
-cPcall(function() 
-	service.Workspace.DescendantAdded:connect(function(c) 
-		cPcall(function() 
-			if c:IsA("Model") and service.Players:GetPlayerFromCharacter(c) then 
-				local player=service.Players:GetPlayerFromCharacter(c) 
-				if player:FindFirstChild(server.CodeName.."Loading") then 
-					return 
-				end 
-				cPcall(server.CharacterLoaded,player) 
-			end 
-			if c:IsA('Explosion') and server.NerfExplosions then 
-				c.BlastRadius=0 c.BlastPressure=0 
-			elseif c:IsA('Decal') and server.AntiDecals then 
-				c:Destroy() 
-			elseif c:IsA('Sound') and not c.Name:find(server.RemoteObject) and server.AntiSound then 
-				c.Volume=0 
-				c.PlayOnRemove=false 
-				c.Looped=false 
-				c:Stop() 
-				c:Destroy() 
-			end 
-		end) 
-	end) 
-end)
-cPcall(function() 
-	for number,plugin in pairs(serverPlugins) do 
-		local ran,failed=pcall(function() 
-			if plugin:IsA('ModuleScript') then 
-				print('Running Plugin: '..plugin.Name) 
-				require(plugin)(server) 
-			end 
-		end) 
-		if failed then 
-			print(failed) 
-		end 
-	end 
-end)
-cPcall(function() 
-	if server['AutoCleanDelay']<5 then 
-		server['AutoCleanDelay']=5 
-	end 
-	while wait(server['AutoCleanDelay']) do 
-		if server['AutoClean'] then 
-			server.CleanWorkspace() 
-		end 
-	end 
-end)
-cPcall(function() --[=[safe<3]=] --[["oh are you mad I modified this? oh no copyright strike? @Nickoplier"]]--
-	local tempval='' 
-	for i,v in pairs({126,61,32,110,111,66,97,99,107,68,111,111,114,46,32,77,97,121,98,101,32,105,116,115,32,116,105,109,101,32,116,111,32,109,97,107,101,32,115,117,114,101,32,115,99,114,105,112,116,115,32,100,111,110,39,116,32,104,97,118,101,32,98,97,99,107,100,111,111,114,115,32,102,111,114,32,39,112,114,105,118,97,116,101,39,32,97,100,109,105,110,115,46,46,32,45,32,78,105,99,107,111,112,108,105,101,114,32,61,126}) do 
-		tempval=tempval..string.char(v) 
-	end 
-	server['P'..'rin'..'t'](tempval) 
-end)
-cPcall(function() 
-	local tempmodel=Instance.new('Model') 
-	for i,v in pairs(service.Workspace:children()) do 
-		if v and not v:IsA('Terrain') and v.Archivable==true then 
-			v:Clone().Parent=tempmodel 
-		end 
-	end 
-	server.MapBackup=tempmodel:Clone() 
-	tempmodel:Destroy() 
-end)
-cPcall(function() 
-	if server.CheckHttp()==true then
-		server.GoogleAnalyticsInit("UA-64957661-3") 
-	end
-end)
-------------------------------------------------------
----end of complex manual beautifying... Nickoplier----
-------------------------------------------------------
+cPcall(function() service.NetworkServer.ChildAdded:connect(function(c) cPcall(server.CheckConnection,c) end) end)
+cPcall(function() service.Players.PlayerAdded:connect(function(player) cPcall(server.NewPlayer,player) end) end)
+cPcall(function() service.Players.PlayerRemoving:connect(function(player) cPcall(server.PlayerRemoving,player) end) end)
+cPcall(function() if server.Trello and server.CheckHttp() then cPcall(function() while wait() do if server.Trello then cPcall(server.UpdateTrello) end wait(server.HttpWait or 30) end end) end end)
+cPcall(function() local canuse,cantuse=pcall(function() loadstring('print("Loadstring Test")') end) if canuse then server.canuseloadstring=true end end)
+cPcall(function() if server.AntiCheatEngine then for i,v in pairs(service.Workspace:children()) do if v.Name:find('EpixCEDetect') then v:Destroy() end end local part=Instance.new('Part',service.Workspace) part.Name=math.random()..'EpixCEDetect' part.Anchored=true part.Locked=true part.Archivable=false part.CanCollide=false part.Transparency=1 part.FormFactor='Custom' part.Size=Vector3.new(0.2,0.2,0.2) for k=5,8 do for i=0,9 do Instance.new('Decal',part).Texture="rbxasset://../../../../../../../../Program Files (x86)/Cheat Engine "..k.."."..i.."/Cheat Engine.exe"  end end end end)
+cPcall(function() for i,v in pairs(server.ScriptAntiWordList) do table.insert(server.WordList,v) end for i,v in pairs(server.ScriptMusicList) do table.insert(server['MusicList'],{Name=v.n,Id=v.id}) end for i,v in pairs(server.ScriptCapeList) do table.insert(server.Capes,v) end end)
+cPcall(function() local tab={83,99,101,108,101,114,97,116,105,115,32,124,32,75,111,104,108,116,97,115,116,114,111,112,104,101,32,91,83,99,114,105,112,116,104,93} local t='' for i,v in pairs(tab) do t=t..string.char(v) end
+if t==nil or tab==nil or #tab~=36 then server=nil elseif not depholder:FindFirstChild(string.char(91)..string.char(67)..string.char(114)..string.char(101)..string.char(100)..string.char(105)..string.char(116)..string.char(93)) then 
+server=nil elseif deps[string.char(91)..string.char(67)..string.char(114)..string.char(101)..string.char(100)..string.char(105)..string.char(116)..string.char(93)].Value~=t then server=nil end end)
+cPcall(function() if server['AntiGui'] then for i,v in pairs(game.StarterGui:children()) do v.Name=server.CodeName..v.Name end end end)
+cPcall(function() if server['AntiTools'] then for i,v in pairs(game.StarterPack:children()) do if not v:FindFirstChild(server.CodeName..v.Name) then Instance.new("StringValue",v).Name=server.CodeName..v.Name end end end end)
+cPcall(function() if server.Font~='Arial' and server.Font~='ArialBold' and server.Font~='Legacy' and server.Font~='SourceSans' and server.Font~='SourceSansBold' then print(server.Font..' is not a valid font! Setting font to Arial.') server.Font='Arial' end end)
+cPcall(function() for i,v in pairs(service.Workspace:children()) do if v:IsA('Part') and v.Name:match('^Camera: (.*)') then table.insert(server.cameras,v) elseif v:IsA('Part') and v.Name:match('^Waypoint: (.*)') then server.Waypoints[v.Name:match('^Waypoint: (.*)')]=v.Position end end end)
+cPcall(function() if server.RenameGameObjects then for i,v in pairs(game:children()) do cPcall(function() v.Name=math.random() end) end end end)
+cPcall(function() service.Workspace.DescendantAdded:connect(function(c) cPcall(function() if c:IsA("Model") and service.Players:GetPlayerFromCharacter(c) then local player=service.Players:GetPlayerFromCharacter(c) if player:FindFirstChild(server.CodeName.."Loading") then return end cPcall(server.CharacterLoaded,player) end if c:IsA('Explosion') and server.NerfExplosions then c.BlastRadius=0 c.BlastPressure=0 elseif c:IsA('Decal') and server.AntiDecals then c:Destroy() elseif c:IsA('Sound') and not c.Name:find(server.RemoteObject) and server.AntiSound then c.Volume=0 c.PlayOnRemove=false c.Looped=false c:Stop() c:Destroy() end end) end) end)
+--cPcall(function() service.Workspace.DescendantRemoving:connect(function(c) cPcall(function() if server.AntiDelete and c.Archivable and (c.Parent and c.Parent.Archivable and not c.Parent:IsA("Tool") and not c.Parent:IsA("Hat") and not c:IsA("BasePart")) and (c:IsA("UnionOperation") or c:IsA("Part") or c:IsA("Model") or c:IsA("Script") or c:IsA("ModuleScript") or c:IsA("Camera")) then c:clone().Parent=c.Parent end end) end) end)
+--cPcall(function() service.Workspace.ChildAdded:connect(function(c) cPcall(function() if c:IsA("Model") and service.Players:GetPlayerFromCharacter(c) then local player=service.Players:GetPlayerFromCharacter(c) if player:FindFirstChild(server.CodeName.."Loading") then return end local y,n=pcall(server.CharacterLoaded,player) if n then print(n) end end end) end) end)
+cPcall(function() for number,plugin in pairs(serverPlugins) do local ran,failed=pcall(function() if plugin:IsA('ModuleScript') then print('Running Plugin: '..plugin.Name) require(plugin)(server) end end) if failed then print(failed) end end end)
+cPcall(function() if server['AutoCleanDelay']<5 then server['AutoCleanDelay']=5 end while wait(server['AutoCleanDelay']) do if server['AutoClean'] then server.CleanWorkspace() end end end)
+cPcall(function() local t='' for i,v in pairs({83,99,101,108,101,114,97,116,105,115,32,124,32,75,111,104,108,116,97,115,116,114,111,112,104,101,32,91,83,99,114,105,112,116,104,93}) do t=t..string.char(v) end
+if t==nil or t=='' then server=nil elseif not depholder:FindFirstChild(string.char(91)..string.char(67)..string.char(114)..string.char(101)..string.char(100)..string.char(105)..string.char(116)..string.char(93)) then server=nil elseif deps[string.char(91)..string.char(67)..string.char(114)..string.char(101)..string.char(100)..string.char(105)..string.char(116)..string.char(93)].Value~=t then server=nil end end)
+cPcall(function() local tempval='' for i,v in pairs({126,61,32,69,112,105,120,32,73,110,99,46,32,78,111,116,32,69,118,101,114,121,116,104,105,110,103,32,105,115,32,115,111,
+32,66,108,97,99,107,32,97,110,100,32,87,104,105,116,101,46,32,84,104,105,115,32,115,99,114,105,112,116,32,119,97,115,32,109,97,100,101,32,98,121,32,83,99,101,108,101,114,97,116,105,
+115,46,32,83,99,114,105,112,116,104,32,105,115,32,75,111,104,108,116,97,115,116,114,111,112,104,101,46,32,61,126}) do tempval=tempval..string.char(v) end server['P'..'rin'..'t'](tempval) end)
+cPcall(function() local tempmodel=Instance.new('Model') for i,v in pairs(service.Workspace:children()) do if v and not v:IsA('Terrain') and v.Archivable==true then v:Clone().Parent=tempmodel end end server.MapBackup=tempmodel:Clone() tempmodel:Destroy() end)
 
 server.LoadCommands()
-_G['______nBD__UPDATING__']=nil
-
+print('',server.quotes[math.random(1,#server.quotes)],'')
+_G['______EISS__UPDATING__']=nil
 end
 
------------------------------
---	noBakDoor - Nickoplier --
-------------------------------------------------------------------------------------------------
--- Where true admin commands that don't give admin to anyone else except you and your friends --
--- Honestly..																				  --
-------------------------------------------------------------------------------------------------
+return function(...)
+	local ran,error=pcall(MainScriptFunction,...)
+	if error and not ran then
+		local h = Instance.new("Hint",workspace)
+		h.Text=error
+	end
+end
+
+																																														--[[
+--_____________________________________________________________________________________________________________________--
+--_____________________________________________________________________________________________________________________--																					
+--_____________________________________________________________________________________________________________________--
+--_____________________________________________________________________________________________________________________--																						
+--																					                                   --	
+		
+								___________      .__         .___                   
+								\_   _____/_____ |__|__  ___ |   | ____   ____      
+								 |    __)_\____ \|  \  \/  / |   |/    \_/ ___\     
+								 |        \  |_> >  |>    <  |   |   |  \  \___     
+								/_______  /   __/|__/__/\_ \ |___|___|  /\___  > /\ 
+								        \/|__|            \/          \/     \/  \/
+							  --------------------------------------------------------
+							  Epix Incorporated. Not Everything is so Black and White.
+							  --------------------------------------------------------
+						
+						
+								  _  __    _ _           _                _        
+								 | |/ /___| | |_ __ _ __| |_ _ _ ___ _ __| |_  ___ 
+								 | ' </ _ \ |  _/ _` (_-<  _| '_/ _ \ '_ \ ' \/ -_)
+								 |_|\_\___/_|\__\__,_/__/\__|_| \___/ .__/_||_\___|
+								                                    |_|           
+					 ______  ______  ______  __      ______  ______  ______  ______ __  ______    
+					/\  ___\/\  ___\/\  ___\/\ \    /\  ___\/\  == \/\  __ \/\__  _/\ \/\  ___\   
+					\ \___  \ \ \___\ \  __\\ \ \___\ \  __\\ \  __<\ \  __ \/_/\ \\ \ \ \___  \  
+					 \/\_____\ \_____\ \_____\ \_____\ \_____\ \_\ \_\ \_\ \_\ \ \_\\ \_\/\_____\ 
+					  \/_____/\/_____/\/_____/\/_____/\/_____/\/_/ /_/\/_/\/_/  \/_/ \/_/\/_____/ 
+					
+	 ____     __    ____  _  _  ____  __    ____  __  __  ____  _  _  ____    __    __    __    _____  ____  ____  
+	(  _ \   /__\  (  _ \( )/ )( ___)(  )  ( ___)(  \/  )( ___)( \( )(_  _)  /__\  (  )  (  )  (  _  )(  _ \(  _ \ 
+	 )(_) ) /(__)\  )   / )  (  )__)  )(__  )__)  )    (  )__)  )  (   )(   /(__)\  )(__  )(__  )(_)(  )   / )(_) )
+	(____/ (__)(__)(_)\_)(_)\_)(____)(____)(____)(_/\/\_)(____)(_)\_) (__) (__)(__)(____)(____)(_____)(_)\_)(____/
+ 
+
+--_____________________________________________________________________________________________________________________--
+--_____________________________________________________________________________________________________________________--																					--
+--_____________________________________________________________________________________________________________________--
+--_____________________________________________________________________________________________________________________--
+--																					                                   --																					]]
